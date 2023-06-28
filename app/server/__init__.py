@@ -5,7 +5,7 @@ from app import proto
 
 from . import data_server
 
-_HOST = '127.0.0.1'
+_HOST = 'localhost'
 _PORT = '8088'
 _MAX_WORKERS = 4
 

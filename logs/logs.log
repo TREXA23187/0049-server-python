@@ -1,0 +1,120 @@
+ERROR _server.py:453 Exception calling application: [Errno 32] Broken pipe
+Traceback (most recent call last):
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/grpc/_server.py", line 443, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/Users/chenxingyang/PycharmProjects/0049-server-python/app/server/data_server.py", line 27, in DoFormat
+BrokenPipeError: [Errno 32] Broken pipe
+ERROR _server.py:453 Exception calling application: [Errno 32] Broken pipe
+Traceback (most recent call last):
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/grpc/_server.py", line 443, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/Users/chenxingyang/PycharmProjects/0049-server-python/app/server/data_server.py", line 27, in DoFormat
+BrokenPipeError: [Errno 32] Broken pipe
+ERROR _server.py:453 Exception calling application: [Errno 32] Broken pipe
+Traceback (most recent call last):
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/grpc/_server.py", line 443, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/Users/chenxingyang/PycharmProjects/0049-server-python/app/server/data_server.py", line 27, in DoFormat
+BrokenPipeError: [Errno 32] Broken pipe
+ERROR _server.py:453 Exception calling application: [Errno 32] Broken pipe
+Traceback (most recent call last):
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/grpc/_server.py", line 443, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/Users/chenxingyang/PycharmProjects/0049-server-python/app/server/data_server.py", line 27, in DoFormat
+BrokenPipeError: [Errno 32] Broken pipe
+ERROR _server.py:453 Exception calling application: [Errno 32] Broken pipe
+Traceback (most recent call last):
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/grpc/_server.py", line 443, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/Users/chenxingyang/PycharmProjects/0049-server-python/app/server/data_server.py", line 27, in DoFormat
+BrokenPipeError: [Errno 32] Broken pipe
+ERROR _server.py:453 Exception calling application: [Errno 32] Broken pipe
+Traceback (most recent call last):
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/grpc/_server.py", line 443, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/Users/chenxingyang/PycharmProjects/0049-server-python/app/server/data_server.py", line 27, in DoFormat
+BrokenPipeError: [Errno 32] Broken pipe
+ERROR _server.py:453 Exception calling application: [Errno 32] Broken pipe
+Traceback (most recent call last):
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/grpc/_server.py", line 443, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/Users/chenxingyang/PycharmProjects/0049-server-python/app/server/data_server.py", line 27, in DoFormat
+BrokenPipeError: [Errno 32] Broken pipe
+ERROR _server.py:453 Exception calling application: [Errno 32] Broken pipe
+Traceback (most recent call last):
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/grpc/_server.py", line 443, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/Users/chenxingyang/PycharmProjects/0049-server-python/app/server/data_server.py", line 27, in DoFormat
+BrokenPipeError: [Errno 32] Broken pipe
+ERROR _server.py:453 Exception calling application: [Errno 32] Broken pipe
+Traceback (most recent call last):
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/grpc/_server.py", line 443, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/Users/chenxingyang/PycharmProjects/0049-server-python/app/server/data_server.py", line 27, in DoFormat
+BrokenPipeError: [Errno 32] Broken pipe
+ERROR _server.py:453 Exception calling application: [Errno 32] Broken pipe
+Traceback (most recent call last):
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/grpc/_server.py", line 443, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/Users/chenxingyang/PycharmProjects/0049-server-python/app/server/data_server.py", line 27, in DoFormat
+BrokenPipeError: [Errno 32] Broken pipe
+ERROR _server.py:453 Exception calling application: [Errno 32] Broken pipe
+Traceback (most recent call last):
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/grpc/_server.py", line 443, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/Users/chenxingyang/PycharmProjects/0049-server-python/app/server/data_server.py", line 27, in DoFormat
+BrokenPipeError: [Errno 32] Broken pipe
+ERROR _server.py:453 Exception calling application: [Errno 32] Broken pipe
+Traceback (most recent call last):
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/grpc/_server.py", line 443, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/Users/chenxingyang/PycharmProjects/0049-server-python/app/server/data_server.py", line 27, in DoFormat
+BrokenPipeError: [Errno 32] Broken pipe
+ERROR _server.py:453 Exception calling application: [Errno 32] Broken pipe
+Traceback (most recent call last):
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/grpc/_server.py", line 443, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/Users/chenxingyang/PycharmProjects/0049-server-python/app/server/data_server.py", line 27, in DoFormat
+BrokenPipeError: [Errno 32] Broken pipe
+ERROR _server.py:453 Exception calling application: [Errno 32] Broken pipe
+Traceback (most recent call last):
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/grpc/_server.py", line 443, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/Users/chenxingyang/PycharmProjects/0049-server-python/app/server/data_server.py", line 27, in DoFormat
+BrokenPipeError: [Errno 32] Broken pipe
+ERROR _server.py:453 Exception calling application: [Errno 32] Broken pipe
+Traceback (most recent call last):
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/grpc/_server.py", line 443, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/Users/chenxingyang/PycharmProjects/0049-server-python/app/server/data_server.py", line 27, in DoFormat
+BrokenPipeError: [Errno 32] Broken pipe
+ERROR _server.py:453 Exception calling application: [Errno 32] Broken pipe
+Traceback (most recent call last):
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/grpc/_server.py", line 443, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/Users/chenxingyang/PycharmProjects/0049-server-python/app/server/data_server.py", line 27, in DoFormat
+BrokenPipeError: [Errno 32] Broken pipe
+ERROR _server.py:453 Exception calling application: [Errno 32] Broken pipe
+Traceback (most recent call last):
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/grpc/_server.py", line 443, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/Users/chenxingyang/PycharmProjects/0049-server-python/app/server/data_server.py", line 27, in DoFormat
+BrokenPipeError: [Errno 32] Broken pipe
+ERROR _server.py:453 Exception calling application: [Errno 32] Broken pipe
+Traceback (most recent call last):
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/grpc/_server.py", line 443, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/Users/chenxingyang/PycharmProjects/0049-server-python/app/server/data_server.py", line 27, in DoFormat
+BrokenPipeError: [Errno 32] Broken pipe
+ERROR _server.py:453 Exception calling application: [Errno 32] Broken pipe
+Traceback (most recent call last):
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/grpc/_server.py", line 443, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/Users/chenxingyang/PycharmProjects/0049-server-python/app/server/data_server.py", line 27, in DoFormat
+BrokenPipeError: [Errno 32] Broken pipe
+ERROR _server.py:453 Exception calling application: [Errno 32] Broken pipe
+Traceback (most recent call last):
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/grpc/_server.py", line 443, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/Users/chenxingyang/PycharmProjects/0049-server-python/app/server/data_server.py", line 27, in DoFormat
+BrokenPipeError: [Errno 32] Broken pipe
