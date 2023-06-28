@@ -5,6 +5,7 @@ from app import proto
 
 from . import data_server
 from . import iris_server
+from . import file_server
 
 _HOST = 'localhost'
 _PORT = '8088'
@@ -17,8 +18,9 @@ def create_server():
     server = grpc.server(futures.ThreadPoolExecutor(max_workers=_MAX_WORKERS))  # create server
 
     # Add derived interface services to the server (implementing their own processing functions)
-    # proto.data_pb2_grpc.add_FormatDataServicer_to_server(data_server.FormatData(), server)
+    proto.data_pb2_grpc.add_FormatDataServicer_to_server(data_server.FormatData(), server)
     proto.iris_pb2_grpc.add_PredictionTaskServicer_to_server(iris_server.PredictionTask(), server)
+    proto.file_pb2_grpc.add_FileServiceServicer_to_server(file_server.FileService(), server)
 
     server.add_insecure_port(_HOST + ':' + _PORT)
 
