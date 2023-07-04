@@ -132,3 +132,78 @@ Traceback (most recent call last):
   File "/Users/chenxingyang/PycharmProjects/0049-server-python/app/server/iris_server.py", line 7, in LaunchTask
     result = view.iris_dt.launch_task(request['sepal_length'], request['sepal_width'], request['petal_length'],
 TypeError: 'TaskRequest' object is not subscriptable
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "POST /v1.43/containers/create HTTP/1.1" 201 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/88d14f517c65c72283f684b28d4860c6a50361078a4db8dd6af5043b0a4c0064/json HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "POST /v1.43/containers/88d14f517c65c72283f684b28d4860c6a50361078a4db8dd6af5043b0a4c0064/start HTTP/1.1" 204 0
+DEBUG connectionpool.py:546 http://localhost:None "POST /v1.43/containers/88d14f517c65c72283f684b28d4860c6a50361078a4db8dd6af5043b0a4c0064/start HTTP/1.1" 304 0
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "POST /v1.43/containers/create HTTP/1.1" 201 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/724bb31d5c65b8e410872b712d73b84c4685a4edd34be71bea1484eebf5c79c8/json HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "POST /v1.43/containers/724bb31d5c65b8e410872b712d73b84c4685a4edd34be71bea1484eebf5c79c8/start HTTP/1.1" 204 0
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "POST /v1.43/containers/create HTTP/1.1" 201 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/5c63f4dd7ae2bf7fa2559f6afc0d9a9b527f20fd573995f523913079095af72d/json HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "POST /v1.43/containers/5c63f4dd7ae2bf7fa2559f6afc0d9a9b527f20fd573995f523913079095af72d/start HTTP/1.1" 204 0
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "POST /v1.43/containers/create HTTP/1.1" 201 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/95a169b9d4ca184f8a59492691af13ca69258f477899b13cecea44dd41ba176c/json HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "POST /v1.43/containers/95a169b9d4ca184f8a59492691af13ca69258f477899b13cecea44dd41ba176c/start HTTP/1.1" 204 0
+DEBUG connectionpool.py:546 http://localhost:None "POST /v1.43/containers/95a169b9d4ca184f8a59492691af13ca69258f477899b13cecea44dd41ba176c/start HTTP/1.1" 304 0
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "POST /v1.43/containers/create HTTP/1.1" 201 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/53424b5e06b056a910358d089260252b236f698898e6d403bcd6a4668289ae91/json HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "POST /v1.43/containers/53424b5e06b056a910358d089260252b236f698898e6d403bcd6a4668289ae91/start HTTP/1.1" 500 None
+ERROR _server.py:453 Exception calling application: 500 Server Error for http+docker://localhost/v1.43/containers/53424b5e06b056a910358d089260252b236f698898e6d403bcd6a4668289ae91/start: Internal Server Error ("driver failed programming external connectivity on endpoint pensive_tharp (05af8a53b11d7a35ec119cc337601fb1b44572d1122c91473cc10877c0e04ec2): Bind for 0.0.0.0:5005 failed: port is already allocated")
+Traceback (most recent call last):
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/docker/api/client.py", line 268, in _raise_for_status
+    response.raise_for_status()
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: Internal Server Error for url: http+docker://localhost/v1.43/containers/53424b5e06b056a910358d089260252b236f698898e6d403bcd6a4668289ae91/start
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/grpc/_server.py", line 443, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/Users/chenxingyang/PycharmProjects/0049-server-python/app/server/instance_server.py", line 8, in CreateInstance
+    container = docker_utils.run_container('flask-demo')
+  File "/Users/chenxingyang/PycharmProjects/0049-server-python/app/utils/docker_utils.py", line 19, in run_container
+    container = client.containers.run(image_name, ports={'5005/tcp': 5005}, detach=True)
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/docker/models/containers.py", line 865, in run
+    container.start()
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/docker/models/containers.py", line 406, in start
+    return self.client.api.start(self.id, **kwargs)
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/docker/utils/decorators.py", line 19, in wrapped
+    return f(self, resource_id, *args, **kwargs)
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/docker/api/container.py", line 1127, in start
+    self._raise_for_status(res)
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/docker/api/client.py", line 270, in _raise_for_status
+    raise create_api_error_from_http_exception(e) from e
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/docker/errors.py", line 39, in create_api_error_from_http_exception
+    raise cls(e, response=response, explanation=explanation) from e
+docker.errors.APIError: 500 Server Error for http+docker://localhost/v1.43/containers/53424b5e06b056a910358d089260252b236f698898e6d403bcd6a4668289ae91/start: Internal Server Error ("driver failed programming external connectivity on endpoint pensive_tharp (05af8a53b11d7a35ec119cc337601fb1b44572d1122c91473cc10877c0e04ec2): Bind for 0.0.0.0:5005 failed: port is already allocated")
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "POST /v1.43/containers/create HTTP/1.1" 201 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/0728e96653e02b5e9b75425b7c70b4cf6db3785e8425da6be681e0d91babd53a/json HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "POST /v1.43/containers/0728e96653e02b5e9b75425b7c70b4cf6db3785e8425da6be681e0d91babd53a/start HTTP/1.1" 204 0
+DEBUG connectionpool.py:546 http://localhost:None "POST /v1.43/containers/0728e96653e02b5e9b75425b7c70b4cf6db3785e8425da6be681e0d91babd53a/start HTTP/1.1" 304 0

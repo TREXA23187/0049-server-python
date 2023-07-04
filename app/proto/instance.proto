@@ -1,0 +1,19 @@
+syntax = "proto3";
+package proto;
+
+//python -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. ./instance.proto
+
+service InstanceService {
+  rpc CreateInstance(InstanceRequest) returns (InstanceResponse){}
+}
+
+message InstanceRequest {
+  string template = 1;
+  string model = 2;
+  string url = 3;
+}
+message InstanceResponse{
+  string instance_id = 1;
+  string instance_name = 2;
+}
+
