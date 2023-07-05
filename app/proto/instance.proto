@@ -4,16 +4,25 @@ package proto;
 //python -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. ./instance.proto
 
 service InstanceService {
-  rpc CreateInstance(InstanceRequest) returns (InstanceResponse){}
+  rpc CreateInstance(CreateInstanceRequest) returns (CreateInstanceResponse){}
+  rpc GetInstanceInfo(InstanceInfoRequest) returns (InstanceInfoResponse){}
+  rpc StartOrStopInstance(InstanceInfoRequest) returns (InstanceInfoResponse){}
 }
 
-message InstanceRequest {
+message CreateInstanceRequest {
   string template = 1;
   string model = 2;
   string url = 3;
 }
-message InstanceResponse{
+message CreateInstanceResponse{
   string instance_id = 1;
   string instance_name = 2;
+}
+
+message InstanceInfoRequest{
+  string instance_id = 1;
+}
+message InstanceInfoResponse{
+  string status = 1;
 }
 

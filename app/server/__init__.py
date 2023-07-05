@@ -20,6 +20,7 @@ def create_server():
     # Add derived interface services to the server (implementing their own processing functions)
     proto.iris_pb2_grpc.add_PredictionTaskServicer_to_server(iris_server.PredictionTask(), server)
     proto.file_pb2_grpc.add_FileServiceServicer_to_server(file_server.FileService(), server)
+
     proto.instance_pb2_grpc.add_InstanceServiceServicer_to_server(instance_server.InstanceService(), server)
 
     server.add_insecure_port(_HOST + ':' + _PORT)

@@ -19,36 +19,36 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x0einstance.proto\x12\x05proto\"?\n\x0fInstanceRequest\x12\x10\n\x08template\x18\x01 \x01(\t\x12\r\n\x05model\x18\x02 \x01(\t\x12\x0b\n\x03url\x18\x03 \x01(\t\">\n\x10InstanceResponse\x12\x13\n\x0binstance_id\x18\x01 \x01(\t\x12\x15\n\rinstance_name\x18\x02 \x01(\t2V\n\x0fInstanceService\x12\x43\n\x0e\x43reateInstance\x12\x16.proto.InstanceRequest\x1a\x17.proto.InstanceResponse\"\x00\x62\x06proto3'
+  serialized_pb=b'\n\x0einstance.proto\x12\x05proto\"E\n\x15\x43reateInstanceRequest\x12\x10\n\x08template\x18\x01 \x01(\t\x12\r\n\x05model\x18\x02 \x01(\t\x12\x0b\n\x03url\x18\x03 \x01(\t\"D\n\x16\x43reateInstanceResponse\x12\x13\n\x0binstance_id\x18\x01 \x01(\t\x12\x15\n\rinstance_name\x18\x02 \x01(\t\"*\n\x13InstanceInfoRequest\x12\x13\n\x0binstance_id\x18\x01 \x01(\t\"&\n\x14InstanceInfoResponse\x12\x0e\n\x06status\x18\x01 \x01(\t2\x82\x02\n\x0fInstanceService\x12O\n\x0e\x43reateInstance\x12\x1c.proto.CreateInstanceRequest\x1a\x1d.proto.CreateInstanceResponse\"\x00\x12L\n\x0fGetInstanceInfo\x12\x1a.proto.InstanceInfoRequest\x1a\x1b.proto.InstanceInfoResponse\"\x00\x12P\n\x13StartOrStopInstance\x12\x1a.proto.InstanceInfoRequest\x1a\x1b.proto.InstanceInfoResponse\"\x00\x62\x06proto3'
 )
 
 
 
 
-_INSTANCEREQUEST = _descriptor.Descriptor(
-  name='InstanceRequest',
-  full_name='proto.InstanceRequest',
+_CREATEINSTANCEREQUEST = _descriptor.Descriptor(
+  name='CreateInstanceRequest',
+  full_name='proto.CreateInstanceRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
-      name='template', full_name='proto.InstanceRequest.template', index=0,
+      name='template', full_name='proto.CreateInstanceRequest.template', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='model', full_name='proto.InstanceRequest.model', index=1,
+      name='model', full_name='proto.CreateInstanceRequest.model', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='url', full_name='proto.InstanceRequest.url', index=2,
+      name='url', full_name='proto.CreateInstanceRequest.url', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -67,27 +67,27 @@ _INSTANCEREQUEST = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=25,
-  serialized_end=88,
+  serialized_end=94,
 )
 
 
-_INSTANCERESPONSE = _descriptor.Descriptor(
-  name='InstanceResponse',
-  full_name='proto.InstanceResponse',
+_CREATEINSTANCERESPONSE = _descriptor.Descriptor(
+  name='CreateInstanceResponse',
+  full_name='proto.CreateInstanceResponse',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
-      name='instance_id', full_name='proto.InstanceResponse.instance_id', index=0,
+      name='instance_id', full_name='proto.CreateInstanceResponse.instance_id', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='instance_name', full_name='proto.InstanceResponse.instance_name', index=1,
+      name='instance_name', full_name='proto.CreateInstanceResponse.instance_name', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -105,27 +105,107 @@ _INSTANCERESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=90,
-  serialized_end=152,
+  serialized_start=96,
+  serialized_end=164,
 )
 
-DESCRIPTOR.message_types_by_name['InstanceRequest'] = _INSTANCEREQUEST
-DESCRIPTOR.message_types_by_name['InstanceResponse'] = _INSTANCERESPONSE
+
+_INSTANCEINFOREQUEST = _descriptor.Descriptor(
+  name='InstanceInfoRequest',
+  full_name='proto.InstanceInfoRequest',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='instance_id', full_name='proto.InstanceInfoRequest.instance_id', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=166,
+  serialized_end=208,
+)
+
+
+_INSTANCEINFORESPONSE = _descriptor.Descriptor(
+  name='InstanceInfoResponse',
+  full_name='proto.InstanceInfoResponse',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='status', full_name='proto.InstanceInfoResponse.status', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=210,
+  serialized_end=248,
+)
+
+DESCRIPTOR.message_types_by_name['CreateInstanceRequest'] = _CREATEINSTANCEREQUEST
+DESCRIPTOR.message_types_by_name['CreateInstanceResponse'] = _CREATEINSTANCERESPONSE
+DESCRIPTOR.message_types_by_name['InstanceInfoRequest'] = _INSTANCEINFOREQUEST
+DESCRIPTOR.message_types_by_name['InstanceInfoResponse'] = _INSTANCEINFORESPONSE
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
-InstanceRequest = _reflection.GeneratedProtocolMessageType('InstanceRequest', (_message.Message,), {
-  'DESCRIPTOR' : _INSTANCEREQUEST,
+CreateInstanceRequest = _reflection.GeneratedProtocolMessageType('CreateInstanceRequest', (_message.Message,), {
+  'DESCRIPTOR' : _CREATEINSTANCEREQUEST,
   '__module__' : 'instance_pb2'
-  # @@protoc_insertion_point(class_scope:proto.InstanceRequest)
+  # @@protoc_insertion_point(class_scope:proto.CreateInstanceRequest)
   })
-_sym_db.RegisterMessage(InstanceRequest)
+_sym_db.RegisterMessage(CreateInstanceRequest)
 
-InstanceResponse = _reflection.GeneratedProtocolMessageType('InstanceResponse', (_message.Message,), {
-  'DESCRIPTOR' : _INSTANCERESPONSE,
+CreateInstanceResponse = _reflection.GeneratedProtocolMessageType('CreateInstanceResponse', (_message.Message,), {
+  'DESCRIPTOR' : _CREATEINSTANCERESPONSE,
   '__module__' : 'instance_pb2'
-  # @@protoc_insertion_point(class_scope:proto.InstanceResponse)
+  # @@protoc_insertion_point(class_scope:proto.CreateInstanceResponse)
   })
-_sym_db.RegisterMessage(InstanceResponse)
+_sym_db.RegisterMessage(CreateInstanceResponse)
+
+InstanceInfoRequest = _reflection.GeneratedProtocolMessageType('InstanceInfoRequest', (_message.Message,), {
+  'DESCRIPTOR' : _INSTANCEINFOREQUEST,
+  '__module__' : 'instance_pb2'
+  # @@protoc_insertion_point(class_scope:proto.InstanceInfoRequest)
+  })
+_sym_db.RegisterMessage(InstanceInfoRequest)
+
+InstanceInfoResponse = _reflection.GeneratedProtocolMessageType('InstanceInfoResponse', (_message.Message,), {
+  'DESCRIPTOR' : _INSTANCEINFORESPONSE,
+  '__module__' : 'instance_pb2'
+  # @@protoc_insertion_point(class_scope:proto.InstanceInfoResponse)
+  })
+_sym_db.RegisterMessage(InstanceInfoResponse)
 
 
 
@@ -136,16 +216,36 @@ _INSTANCESERVICE = _descriptor.ServiceDescriptor(
   index=0,
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_start=154,
-  serialized_end=240,
+  serialized_start=251,
+  serialized_end=509,
   methods=[
   _descriptor.MethodDescriptor(
     name='CreateInstance',
     full_name='proto.InstanceService.CreateInstance',
     index=0,
     containing_service=None,
-    input_type=_INSTANCEREQUEST,
-    output_type=_INSTANCERESPONSE,
+    input_type=_CREATEINSTANCEREQUEST,
+    output_type=_CREATEINSTANCERESPONSE,
+    serialized_options=None,
+    create_key=_descriptor._internal_create_key,
+  ),
+  _descriptor.MethodDescriptor(
+    name='GetInstanceInfo',
+    full_name='proto.InstanceService.GetInstanceInfo',
+    index=1,
+    containing_service=None,
+    input_type=_INSTANCEINFOREQUEST,
+    output_type=_INSTANCEINFORESPONSE,
+    serialized_options=None,
+    create_key=_descriptor._internal_create_key,
+  ),
+  _descriptor.MethodDescriptor(
+    name='StartOrStopInstance',
+    full_name='proto.InstanceService.StartOrStopInstance',
+    index=2,
+    containing_service=None,
+    input_type=_INSTANCEINFOREQUEST,
+    output_type=_INSTANCEINFORESPONSE,
     serialized_options=None,
     create_key=_descriptor._internal_create_key,
   ),

@@ -1,4 +1,5 @@
 import docker
+from docker.errors import NotFound
 
 
 def build_image(dockerfile_path, tag):
@@ -12,32 +13,54 @@ def build_image(dockerfile_path, tag):
         print(log)
 
 
-def run_container(image_name):
+def run_container(image_name, url):
     client = docker.from_env()
 
+    [ip, port] = str.split(url, ':')
+
     # get container
-    container = client.containers.run(image_name, ports={'5005/tcp': 5005}, detach=True)
+    container = client.containers.run(image_name, ports={f'5005/tcp': port}, detach=True)
 
     container.start()
 
     return container
 
 
-def stop_container(container_name):
+def start_container(container_name_or_id):
     client = docker.from_env()
 
-    container = client.containers.get(container_name)
+    container = client.containers.get(container_name_or_id)
+
+    container.start()
+
+    return container
+
+
+def stop_container(container_name_or_id, should_remove):
+    client = docker.from_env()
+
+    container = client.containers.get(container_name_or_id)
 
     container.stop()
-    container.remove()
+
+    if should_remove:
+        container.remove()
 
 
-def test():
-    print('test')
+def get_container_status(container_name_or_id):
+    client = docker.DockerClient()
+
+    try:
+        container = client.containers.get(container_name_or_id)
+
+        # 'created', 'restarting', 'running', 'removing', 'paused', 'exited','dead'
+        return container.status
+    except NotFound:
+        return 'not exist'
 
 
 if __name__ == '__main__':
     # create_image_and_run_container('/Users/chenxingyang/PycharmProjects/flask_demo', 'flask-demo',
     #                                'flask-demo')
     # run_container('flask-demo')
-    stop_container()
+    print(get_container_status('b369bd73ca88235dd1d6492d014be3797e8cfb5b494128c2df3dd149058ad86d'))
