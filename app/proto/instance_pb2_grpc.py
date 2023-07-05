@@ -2,7 +2,7 @@
 """Client and server classes corresponding to protobuf-defined services."""
 import grpc
 
-import instance_pb2 as instance__pb2
+from . import instance_pb2 as instance__pb2
 
 
 class InstanceServiceStub(object):
@@ -26,10 +26,10 @@ class InstanceServiceStub(object):
                 request_serializer=instance__pb2.InstanceInfoRequest.SerializeToString,
                 response_deserializer=instance__pb2.InstanceInfoResponse.FromString,
                 )
-        self.StartOrStopInstance = channel.unary_unary(
-                '/proto.InstanceService/StartOrStopInstance',
-                request_serializer=instance__pb2.InstanceInfoRequest.SerializeToString,
-                response_deserializer=instance__pb2.InstanceInfoResponse.FromString,
+        self.OperateInstance = channel.unary_unary(
+                '/proto.InstanceService/OperateInstance',
+                request_serializer=instance__pb2.OperateInstanceRequest.SerializeToString,
+                response_deserializer=instance__pb2.OperateInstanceResponse.FromString,
                 )
 
 
@@ -50,7 +50,7 @@ class InstanceServiceServicer(object):
         context.set_details('Method not implemented!')
         raise NotImplementedError('Method not implemented!')
 
-    def StartOrStopInstance(self, request, context):
+    def OperateInstance(self, request, context):
         """Missing associated documentation comment in .proto file."""
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
@@ -69,10 +69,10 @@ def add_InstanceServiceServicer_to_server(servicer, server):
                     request_deserializer=instance__pb2.InstanceInfoRequest.FromString,
                     response_serializer=instance__pb2.InstanceInfoResponse.SerializeToString,
             ),
-            'StartOrStopInstance': grpc.unary_unary_rpc_method_handler(
-                    servicer.StartOrStopInstance,
-                    request_deserializer=instance__pb2.InstanceInfoRequest.FromString,
-                    response_serializer=instance__pb2.InstanceInfoResponse.SerializeToString,
+            'OperateInstance': grpc.unary_unary_rpc_method_handler(
+                    servicer.OperateInstance,
+                    request_deserializer=instance__pb2.OperateInstanceRequest.FromString,
+                    response_serializer=instance__pb2.OperateInstanceResponse.SerializeToString,
             ),
     }
     generic_handler = grpc.method_handlers_generic_handler(
@@ -121,7 +121,7 @@ class InstanceService(object):
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
     @staticmethod
-    def StartOrStopInstance(request,
+    def OperateInstance(request,
             target,
             options=(),
             channel_credentials=None,
@@ -131,8 +131,8 @@ class InstanceService(object):
             wait_for_ready=None,
             timeout=None,
             metadata=None):
-        return grpc.experimental.unary_unary(request, target, '/proto.InstanceService/StartOrStopInstance',
-            instance__pb2.InstanceInfoRequest.SerializeToString,
-            instance__pb2.InstanceInfoResponse.FromString,
+        return grpc.experimental.unary_unary(request, target, '/proto.InstanceService/OperateInstance',
+            instance__pb2.OperateInstanceRequest.SerializeToString,
+            instance__pb2.OperateInstanceResponse.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)

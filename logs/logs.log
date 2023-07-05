@@ -510,3 +510,553 @@ DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
 DEBUG auth.py:187 Found 'credsStore' section
 DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
 DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/7c7224b0e286c1103645a2a651f07f362845a8fc1f00a78e3e5fc5d662dba14c/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/7c7224b0e286c1103645a2a651f07f362845a8fc1f00a78e3e5fc5d662dba14c/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/7c7224b0e286c1103645a2a651f07f362845a8fc1f00a78e3e5fc5d662dba14c/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/7c7224b0e286c1103645a2a651f07f362845a8fc1f00a78e3e5fc5d662dba14c/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/7c7224b0e286c1103645a2a651f07f362845a8fc1f00a78e3e5fc5d662dba14c/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/json HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "POST /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/stop HTTP/1.1" 204 0
+DEBUG connectionpool.py:546 http://localhost:None "POST /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/stop HTTP/1.1" 204 0
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/7c7224b0e286c1103645a2a651f07f362845a8fc1f00a78e3e5fc5d662dba14c/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/7c7224b0e286c1103645a2a651f07f362845a8fc1f00a78e3e5fc5d662dba14c/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/json HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "POST /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/start HTTP/1.1" 204 0
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/7c7224b0e286c1103645a2a651f07f362845a8fc1f00a78e3e5fc5d662dba14c/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/7c7224b0e286c1103645a2a651f07f362845a8fc1f00a78e3e5fc5d662dba14c/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/json HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "POST /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/stop HTTP/1.1" 204 0
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/7c7224b0e286c1103645a2a651f07f362845a8fc1f00a78e3e5fc5d662dba14c/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/7c7224b0e286c1103645a2a651f07f362845a8fc1f00a78e3e5fc5d662dba14c/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/7c7224b0e286c1103645a2a651f07f362845a8fc1f00a78e3e5fc5d662dba14c/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/7c7224b0e286c1103645a2a651f07f362845a8fc1f00a78e3e5fc5d662dba14c/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/7c7224b0e286c1103645a2a651f07f362845a8fc1f00a78e3e5fc5d662dba14c/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/7c7224b0e286c1103645a2a651f07f362845a8fc1f00a78e3e5fc5d662dba14c/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/7c7224b0e286c1103645a2a651f07f362845a8fc1f00a78e3e5fc5d662dba14c/json HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "POST /v1.43/containers/7c7224b0e286c1103645a2a651f07f362845a8fc1f00a78e3e5fc5d662dba14c/stop HTTP/1.1" 204 0
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/7c7224b0e286c1103645a2a651f07f362845a8fc1f00a78e3e5fc5d662dba14c/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/7c7224b0e286c1103645a2a651f07f362845a8fc1f00a78e3e5fc5d662dba14c/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/json HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "POST /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/start HTTP/1.1" 204 0
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/7c7224b0e286c1103645a2a651f07f362845a8fc1f00a78e3e5fc5d662dba14c/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/7c7224b0e286c1103645a2a651f07f362845a8fc1f00a78e3e5fc5d662dba14c/json HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "POST /v1.43/containers/7c7224b0e286c1103645a2a651f07f362845a8fc1f00a78e3e5fc5d662dba14c/start HTTP/1.1" 204 0
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/7c7224b0e286c1103645a2a651f07f362845a8fc1f00a78e3e5fc5d662dba14c/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/json HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "POST /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/stop HTTP/1.1" 204 0
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/7c7224b0e286c1103645a2a651f07f362845a8fc1f00a78e3e5fc5d662dba14c/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/7c7224b0e286c1103645a2a651f07f362845a8fc1f00a78e3e5fc5d662dba14c/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/json HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "POST /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/start HTTP/1.1" 204 0
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/7c7224b0e286c1103645a2a651f07f362845a8fc1f00a78e3e5fc5d662dba14c/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/json HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "POST /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/stop HTTP/1.1" 204 0
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/7c7224b0e286c1103645a2a651f07f362845a8fc1f00a78e3e5fc5d662dba14c/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/7c7224b0e286c1103645a2a651f07f362845a8fc1f00a78e3e5fc5d662dba14c/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/7c7224b0e286c1103645a2a651f07f362845a8fc1f00a78e3e5fc5d662dba14c/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/7c7224b0e286c1103645a2a651f07f362845a8fc1f00a78e3e5fc5d662dba14c/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/json HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "POST /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/start HTTP/1.1" 204 0
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/7c7224b0e286c1103645a2a651f07f362845a8fc1f00a78e3e5fc5d662dba14c/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/7c7224b0e286c1103645a2a651f07f362845a8fc1f00a78e3e5fc5d662dba14c/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/json HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "POST /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/stop HTTP/1.1" 204 0
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/7c7224b0e286c1103645a2a651f07f362845a8fc1f00a78e3e5fc5d662dba14c/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/7c7224b0e286c1103645a2a651f07f362845a8fc1f00a78e3e5fc5d662dba14c/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/7c7224b0e286c1103645a2a651f07f362845a8fc1f00a78e3e5fc5d662dba14c/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/7c7224b0e286c1103645a2a651f07f362845a8fc1f00a78e3e5fc5d662dba14c/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/7c7224b0e286c1103645a2a651f07f362845a8fc1f00a78e3e5fc5d662dba14c/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/7c7224b0e286c1103645a2a651f07f362845a8fc1f00a78e3e5fc5d662dba14c/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/7c7224b0e286c1103645a2a651f07f362845a8fc1f00a78e3e5fc5d662dba14c/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/json HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "POST /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/start HTTP/1.1" 204 0
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/7c7224b0e286c1103645a2a651f07f362845a8fc1f00a78e3e5fc5d662dba14c/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/7c7224b0e286c1103645a2a651f07f362845a8fc1f00a78e3e5fc5d662dba14c/json HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "POST /v1.43/containers/7c7224b0e286c1103645a2a651f07f362845a8fc1f00a78e3e5fc5d662dba14c/stop HTTP/1.1" 204 0
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/7c7224b0e286c1103645a2a651f07f362845a8fc1f00a78e3e5fc5d662dba14c/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/7c7224b0e286c1103645a2a651f07f362845a8fc1f00a78e3e5fc5d662dba14c/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/7c7224b0e286c1103645a2a651f07f362845a8fc1f00a78e3e5fc5d662dba14c/json HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "POST /v1.43/containers/7c7224b0e286c1103645a2a651f07f362845a8fc1f00a78e3e5fc5d662dba14c/stop HTTP/1.1" 304 0
+DEBUG connectionpool.py:546 http://localhost:None "DELETE /v1.43/containers/7c7224b0e286c1103645a2a651f07f362845a8fc1f00a78e3e5fc5d662dba14c?v=False&link=False&force=False HTTP/1.1" 204 0
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/7c7224b0e286c1103645a2a651f07f362845a8fc1f00a78e3e5fc5d662dba14c/json HTTP/1.1" 404 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/7c7224b0e286c1103645a2a651f07f362845a8fc1f00a78e3e5fc5d662dba14c/json HTTP/1.1" 404 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "POST /v1.43/containers/create HTTP/1.1" 201 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/db11fc555629ac8ca58f3b11c4d4a7938b7a4cf4e6e20b63bd9a5bbd84c4ba25/json HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "POST /v1.43/containers/db11fc555629ac8ca58f3b11c4d4a7938b7a4cf4e6e20b63bd9a5bbd84c4ba25/start HTTP/1.1" 204 0
+DEBUG connectionpool.py:546 http://localhost:None "POST /v1.43/containers/db11fc555629ac8ca58f3b11c4d4a7938b7a4cf4e6e20b63bd9a5bbd84c4ba25/start HTTP/1.1" 304 0
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/7c7224b0e286c1103645a2a651f07f362845a8fc1f00a78e3e5fc5d662dba14c/json HTTP/1.1" 404 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/db11fc555629ac8ca58f3b11c4d4a7938b7a4cf4e6e20b63bd9a5bbd84c4ba25/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/7c7224b0e286c1103645a2a651f07f362845a8fc1f00a78e3e5fc5d662dba14c/json HTTP/1.1" 404 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/db11fc555629ac8ca58f3b11c4d4a7938b7a4cf4e6e20b63bd9a5bbd84c4ba25/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/json HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "POST /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/stop HTTP/1.1" 204 0
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/7c7224b0e286c1103645a2a651f07f362845a8fc1f00a78e3e5fc5d662dba14c/json HTTP/1.1" 404 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/38e4981c8207d4f67bde47d1be76b815d3e3c5b5524d064f171b7bcf7f533db2/json HTTP/1.1" 200 None
+DEBUG config.py:21 Trying paths: ['/Users/chenxingyang/.docker/config.json', '/Users/chenxingyang/.dockercfg']
+DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
+DEBUG auth.py:187 Found 'credsStore' section
+DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
+DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/db11fc555629ac8ca58f3b11c4d4a7938b7a4cf4e6e20b63bd9a5bbd84c4ba25/json HTTP/1.1" 200 None

@@ -19,7 +19,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x0einstance.proto\x12\x05proto\"E\n\x15\x43reateInstanceRequest\x12\x10\n\x08template\x18\x01 \x01(\t\x12\r\n\x05model\x18\x02 \x01(\t\x12\x0b\n\x03url\x18\x03 \x01(\t\"D\n\x16\x43reateInstanceResponse\x12\x13\n\x0binstance_id\x18\x01 \x01(\t\x12\x15\n\rinstance_name\x18\x02 \x01(\t\"*\n\x13InstanceInfoRequest\x12\x13\n\x0binstance_id\x18\x01 \x01(\t\"&\n\x14InstanceInfoResponse\x12\x0e\n\x06status\x18\x01 \x01(\t2\x82\x02\n\x0fInstanceService\x12O\n\x0e\x43reateInstance\x12\x1c.proto.CreateInstanceRequest\x1a\x1d.proto.CreateInstanceResponse\"\x00\x12L\n\x0fGetInstanceInfo\x12\x1a.proto.InstanceInfoRequest\x1a\x1b.proto.InstanceInfoResponse\"\x00\x12P\n\x13StartOrStopInstance\x12\x1a.proto.InstanceInfoRequest\x1a\x1b.proto.InstanceInfoResponse\"\x00\x62\x06proto3'
+  serialized_pb=b'\n\x0einstance.proto\x12\x05proto\"E\n\x15\x43reateInstanceRequest\x12\x10\n\x08template\x18\x01 \x01(\t\x12\r\n\x05model\x18\x02 \x01(\t\x12\x0b\n\x03url\x18\x03 \x01(\t\"D\n\x16\x43reateInstanceResponse\x12\x13\n\x0binstance_id\x18\x01 \x01(\t\x12\x15\n\rinstance_name\x18\x02 \x01(\t\"*\n\x13InstanceInfoRequest\x12\x13\n\x0binstance_id\x18\x01 \x01(\t\"&\n\x14InstanceInfoResponse\x12\x0e\n\x06status\x18\x01 \x01(\t\"@\n\x16OperateInstanceRequest\x12\x13\n\x0binstance_id\x18\x01 \x01(\t\x12\x11\n\toperation\x18\x02 \x01(\t\"*\n\x17OperateInstanceResponse\x12\x0f\n\x07success\x18\x01 \x01(\x08\x32\x84\x02\n\x0fInstanceService\x12O\n\x0e\x43reateInstance\x12\x1c.proto.CreateInstanceRequest\x1a\x1d.proto.CreateInstanceResponse\"\x00\x12L\n\x0fGetInstanceInfo\x12\x1a.proto.InstanceInfoRequest\x1a\x1b.proto.InstanceInfoResponse\"\x00\x12R\n\x0fOperateInstance\x12\x1d.proto.OperateInstanceRequest\x1a\x1e.proto.OperateInstanceResponse\"\x00\x62\x06proto3'
 )
 
 
@@ -173,10 +173,83 @@ _INSTANCEINFORESPONSE = _descriptor.Descriptor(
   serialized_end=248,
 )
 
+
+_OPERATEINSTANCEREQUEST = _descriptor.Descriptor(
+  name='OperateInstanceRequest',
+  full_name='proto.OperateInstanceRequest',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='instance_id', full_name='proto.OperateInstanceRequest.instance_id', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='operation', full_name='proto.OperateInstanceRequest.operation', index=1,
+      number=2, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=250,
+  serialized_end=314,
+)
+
+
+_OPERATEINSTANCERESPONSE = _descriptor.Descriptor(
+  name='OperateInstanceResponse',
+  full_name='proto.OperateInstanceResponse',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='success', full_name='proto.OperateInstanceResponse.success', index=0,
+      number=1, type=8, cpp_type=7, label=1,
+      has_default_value=False, default_value=False,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=316,
+  serialized_end=358,
+)
+
 DESCRIPTOR.message_types_by_name['CreateInstanceRequest'] = _CREATEINSTANCEREQUEST
 DESCRIPTOR.message_types_by_name['CreateInstanceResponse'] = _CREATEINSTANCERESPONSE
 DESCRIPTOR.message_types_by_name['InstanceInfoRequest'] = _INSTANCEINFOREQUEST
 DESCRIPTOR.message_types_by_name['InstanceInfoResponse'] = _INSTANCEINFORESPONSE
+DESCRIPTOR.message_types_by_name['OperateInstanceRequest'] = _OPERATEINSTANCEREQUEST
+DESCRIPTOR.message_types_by_name['OperateInstanceResponse'] = _OPERATEINSTANCERESPONSE
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 CreateInstanceRequest = _reflection.GeneratedProtocolMessageType('CreateInstanceRequest', (_message.Message,), {
@@ -207,6 +280,20 @@ InstanceInfoResponse = _reflection.GeneratedProtocolMessageType('InstanceInfoRes
   })
 _sym_db.RegisterMessage(InstanceInfoResponse)
 
+OperateInstanceRequest = _reflection.GeneratedProtocolMessageType('OperateInstanceRequest', (_message.Message,), {
+  'DESCRIPTOR' : _OPERATEINSTANCEREQUEST,
+  '__module__' : 'instance_pb2'
+  # @@protoc_insertion_point(class_scope:proto.OperateInstanceRequest)
+  })
+_sym_db.RegisterMessage(OperateInstanceRequest)
+
+OperateInstanceResponse = _reflection.GeneratedProtocolMessageType('OperateInstanceResponse', (_message.Message,), {
+  'DESCRIPTOR' : _OPERATEINSTANCERESPONSE,
+  '__module__' : 'instance_pb2'
+  # @@protoc_insertion_point(class_scope:proto.OperateInstanceResponse)
+  })
+_sym_db.RegisterMessage(OperateInstanceResponse)
+
 
 
 _INSTANCESERVICE = _descriptor.ServiceDescriptor(
@@ -216,8 +303,8 @@ _INSTANCESERVICE = _descriptor.ServiceDescriptor(
   index=0,
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_start=251,
-  serialized_end=509,
+  serialized_start=361,
+  serialized_end=621,
   methods=[
   _descriptor.MethodDescriptor(
     name='CreateInstance',
@@ -240,12 +327,12 @@ _INSTANCESERVICE = _descriptor.ServiceDescriptor(
     create_key=_descriptor._internal_create_key,
   ),
   _descriptor.MethodDescriptor(
-    name='StartOrStopInstance',
-    full_name='proto.InstanceService.StartOrStopInstance',
+    name='OperateInstance',
+    full_name='proto.InstanceService.OperateInstance',
     index=2,
     containing_service=None,
-    input_type=_INSTANCEINFOREQUEST,
-    output_type=_INSTANCEINFORESPONSE,
+    input_type=_OPERATEINSTANCEREQUEST,
+    output_type=_OPERATEINSTANCERESPONSE,
     serialized_options=None,
     create_key=_descriptor._internal_create_key,
   ),

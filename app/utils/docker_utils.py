@@ -27,24 +27,32 @@ def run_container(image_name, url):
 
 
 def start_container(container_name_or_id):
-    client = docker.from_env()
+    try:
+        client = docker.from_env()
 
-    container = client.containers.get(container_name_or_id)
+        container = client.containers.get(container_name_or_id)
 
-    container.start()
+        container.start()
 
-    return container
+        return True
+    except Exception:
+        return False
 
 
-def stop_container(container_name_or_id, should_remove):
-    client = docker.from_env()
+def stop_container(container_name_or_id, should_remove=False):
+    try:
+        client = docker.from_env()
 
-    container = client.containers.get(container_name_or_id)
+        container = client.containers.get(container_name_or_id)
 
-    container.stop()
+        container.stop()
 
-    if should_remove:
-        container.remove()
+        if should_remove:
+            container.remove()
+
+        return True
+    except Exception:
+        return False
 
 
 def get_container_status(container_name_or_id):

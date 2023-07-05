@@ -13,3 +13,14 @@ class InstanceService(proto.instance_pb2_grpc.InstanceServiceServicer):
         status = docker_utils.get_container_status(request.instance_id)
 
         return proto.instance_pb2.InstanceInfoResponse(status=status)
+
+    def OperateInstance(self, request, context):
+        success = None
+        if request.operation == 'start':
+            success = docker_utils.start_container(request.instance_id)
+        elif request.operation == 'remove':
+            success = docker_utils.stop_container(request.instance_id, True)
+        else:
+            success = docker_utils.stop_container(request.instance_id)
+
+        return proto.instance_pb2.OperateInstanceResponse(success=success)

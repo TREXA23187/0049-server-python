@@ -6,7 +6,7 @@ package proto;
 service InstanceService {
   rpc CreateInstance(CreateInstanceRequest) returns (CreateInstanceResponse){}
   rpc GetInstanceInfo(InstanceInfoRequest) returns (InstanceInfoResponse){}
-  rpc StartOrStopInstance(InstanceInfoRequest) returns (InstanceInfoResponse){}
+  rpc OperateInstance(OperateInstanceRequest) returns (OperateInstanceResponse){}
 }
 
 message CreateInstanceRequest {
@@ -26,3 +26,10 @@ message InstanceInfoResponse{
   string status = 1;
 }
 
+message OperateInstanceRequest{
+  string instance_id = 1;
+  string operation = 2;
+}
+message OperateInstanceResponse{
+  bool success = 1;
+}
