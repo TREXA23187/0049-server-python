@@ -19,38 +19,45 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x0einstance.proto\x12\x05proto\"E\n\x15\x43reateInstanceRequest\x12\x10\n\x08template\x18\x01 \x01(\t\x12\r\n\x05model\x18\x02 \x01(\t\x12\x0b\n\x03url\x18\x03 \x01(\t\"D\n\x16\x43reateInstanceResponse\x12\x13\n\x0binstance_id\x18\x01 \x01(\t\x12\x15\n\rinstance_name\x18\x02 \x01(\t\"*\n\x13InstanceInfoRequest\x12\x13\n\x0binstance_id\x18\x01 \x01(\t\"&\n\x14InstanceInfoResponse\x12\x0e\n\x06status\x18\x01 \x01(\t\"@\n\x16OperateInstanceRequest\x12\x13\n\x0binstance_id\x18\x01 \x01(\t\x12\x11\n\toperation\x18\x02 \x01(\t\"*\n\x17OperateInstanceResponse\x12\x0f\n\x07success\x18\x01 \x01(\x08\x32\x84\x02\n\x0fInstanceService\x12O\n\x0e\x43reateInstance\x12\x1c.proto.CreateInstanceRequest\x1a\x1d.proto.CreateInstanceResponse\"\x00\x12L\n\x0fGetInstanceInfo\x12\x1a.proto.InstanceInfoRequest\x1a\x1b.proto.InstanceInfoResponse\"\x00\x12R\n\x0fOperateInstance\x12\x1d.proto.OperateInstanceRequest\x1a\x1e.proto.OperateInstanceResponse\"\x00\x62\x06proto3'
+  serialized_pb=b'\n\x0einstance.proto\x12\x05proto\"\\\n\x12\x43reateImageRequest\x12\x12\n\nrepository\x18\x01 \x01(\t\x12\x0b\n\x03tag\x18\x02 \x01(\t\x12\x11\n\tdata_file\x18\x03 \x01(\x0c\x12\x12\n\nmodel_file\x18\x04 \x01(\x0c\";\n\x13\x43reateImageResponse\x12\x10\n\x08image_id\x18\x01 \x01(\t\x12\x12\n\nimage_size\x18\x02 \x01(\x03\"5\n\x12\x44\x65leteImageRequest\x12\x12\n\nrepository\x18\x01 \x01(\t\x12\x0b\n\x03tag\x18\x02 \x01(\t\"&\n\x13\x44\x65leteImageResponse\x12\x0f\n\x07success\x18\x01 \x01(\x08\"8\n\x15\x43reateInstanceRequest\x12\x12\n\nimage_name\x18\x01 \x01(\t\x12\x0b\n\x03url\x18\x02 \x01(\t\"D\n\x16\x43reateInstanceResponse\x12\x13\n\x0binstance_id\x18\x01 \x01(\t\x12\x15\n\rinstance_name\x18\x02 \x01(\t\"*\n\x13InstanceInfoRequest\x12\x13\n\x0binstance_id\x18\x01 \x01(\t\"&\n\x14InstanceInfoResponse\x12\x0e\n\x06status\x18\x01 \x01(\t\"@\n\x16OperateInstanceRequest\x12\x13\n\x0binstance_id\x18\x01 \x01(\t\x12\x11\n\toperation\x18\x02 \x01(\t\"*\n\x17OperateInstanceResponse\x12\x0f\n\x07success\x18\x01 \x01(\x08\x32\x94\x03\n\x0fInstanceService\x12\x46\n\x0b\x43reateImage\x12\x19.proto.CreateImageRequest\x1a\x1a.proto.CreateImageResponse\"\x00\x12\x46\n\x0b\x44\x65leteImage\x12\x19.proto.DeleteImageRequest\x1a\x1a.proto.DeleteImageResponse\"\x00\x12O\n\x0e\x43reateInstance\x12\x1c.proto.CreateInstanceRequest\x1a\x1d.proto.CreateInstanceResponse\"\x00\x12L\n\x0fGetInstanceInfo\x12\x1a.proto.InstanceInfoRequest\x1a\x1b.proto.InstanceInfoResponse\"\x00\x12R\n\x0fOperateInstance\x12\x1d.proto.OperateInstanceRequest\x1a\x1e.proto.OperateInstanceResponse\"\x00\x62\x06proto3'
 )
 
 
 
 
-_CREATEINSTANCEREQUEST = _descriptor.Descriptor(
-  name='CreateInstanceRequest',
-  full_name='proto.CreateInstanceRequest',
+_CREATEIMAGEREQUEST = _descriptor.Descriptor(
+  name='CreateImageRequest',
+  full_name='proto.CreateImageRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
-      name='template', full_name='proto.CreateInstanceRequest.template', index=0,
+      name='repository', full_name='proto.CreateImageRequest.repository', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='model', full_name='proto.CreateInstanceRequest.model', index=1,
+      name='tag', full_name='proto.CreateImageRequest.tag', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='url', full_name='proto.CreateInstanceRequest.url', index=2,
-      number=3, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=b"".decode('utf-8'),
+      name='data_file', full_name='proto.CreateImageRequest.data_file', index=2,
+      number=3, type=12, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"",
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='model_file', full_name='proto.CreateImageRequest.model_file', index=3,
+      number=4, type=12, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"",
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
@@ -67,7 +74,156 @@ _CREATEINSTANCEREQUEST = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=25,
-  serialized_end=94,
+  serialized_end=117,
+)
+
+
+_CREATEIMAGERESPONSE = _descriptor.Descriptor(
+  name='CreateImageResponse',
+  full_name='proto.CreateImageResponse',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='image_id', full_name='proto.CreateImageResponse.image_id', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='image_size', full_name='proto.CreateImageResponse.image_size', index=1,
+      number=2, type=3, cpp_type=2, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=119,
+  serialized_end=178,
+)
+
+
+_DELETEIMAGEREQUEST = _descriptor.Descriptor(
+  name='DeleteImageRequest',
+  full_name='proto.DeleteImageRequest',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='repository', full_name='proto.DeleteImageRequest.repository', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='tag', full_name='proto.DeleteImageRequest.tag', index=1,
+      number=2, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=180,
+  serialized_end=233,
+)
+
+
+_DELETEIMAGERESPONSE = _descriptor.Descriptor(
+  name='DeleteImageResponse',
+  full_name='proto.DeleteImageResponse',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='success', full_name='proto.DeleteImageResponse.success', index=0,
+      number=1, type=8, cpp_type=7, label=1,
+      has_default_value=False, default_value=False,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=235,
+  serialized_end=273,
+)
+
+
+_CREATEINSTANCEREQUEST = _descriptor.Descriptor(
+  name='CreateInstanceRequest',
+  full_name='proto.CreateInstanceRequest',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='image_name', full_name='proto.CreateInstanceRequest.image_name', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='url', full_name='proto.CreateInstanceRequest.url', index=1,
+      number=2, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=275,
+  serialized_end=331,
 )
 
 
@@ -105,8 +261,8 @@ _CREATEINSTANCERESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=96,
-  serialized_end=164,
+  serialized_start=333,
+  serialized_end=401,
 )
 
 
@@ -137,8 +293,8 @@ _INSTANCEINFOREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=166,
-  serialized_end=208,
+  serialized_start=403,
+  serialized_end=445,
 )
 
 
@@ -169,8 +325,8 @@ _INSTANCEINFORESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=210,
-  serialized_end=248,
+  serialized_start=447,
+  serialized_end=485,
 )
 
 
@@ -208,8 +364,8 @@ _OPERATEINSTANCEREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=250,
-  serialized_end=314,
+  serialized_start=487,
+  serialized_end=551,
 )
 
 
@@ -240,10 +396,14 @@ _OPERATEINSTANCERESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=316,
-  serialized_end=358,
+  serialized_start=553,
+  serialized_end=595,
 )
 
+DESCRIPTOR.message_types_by_name['CreateImageRequest'] = _CREATEIMAGEREQUEST
+DESCRIPTOR.message_types_by_name['CreateImageResponse'] = _CREATEIMAGERESPONSE
+DESCRIPTOR.message_types_by_name['DeleteImageRequest'] = _DELETEIMAGEREQUEST
+DESCRIPTOR.message_types_by_name['DeleteImageResponse'] = _DELETEIMAGERESPONSE
 DESCRIPTOR.message_types_by_name['CreateInstanceRequest'] = _CREATEINSTANCEREQUEST
 DESCRIPTOR.message_types_by_name['CreateInstanceResponse'] = _CREATEINSTANCERESPONSE
 DESCRIPTOR.message_types_by_name['InstanceInfoRequest'] = _INSTANCEINFOREQUEST
@@ -251,6 +411,34 @@ DESCRIPTOR.message_types_by_name['InstanceInfoResponse'] = _INSTANCEINFORESPONSE
 DESCRIPTOR.message_types_by_name['OperateInstanceRequest'] = _OPERATEINSTANCEREQUEST
 DESCRIPTOR.message_types_by_name['OperateInstanceResponse'] = _OPERATEINSTANCERESPONSE
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
+
+CreateImageRequest = _reflection.GeneratedProtocolMessageType('CreateImageRequest', (_message.Message,), {
+  'DESCRIPTOR' : _CREATEIMAGEREQUEST,
+  '__module__' : 'instance_pb2'
+  # @@protoc_insertion_point(class_scope:proto.CreateImageRequest)
+  })
+_sym_db.RegisterMessage(CreateImageRequest)
+
+CreateImageResponse = _reflection.GeneratedProtocolMessageType('CreateImageResponse', (_message.Message,), {
+  'DESCRIPTOR' : _CREATEIMAGERESPONSE,
+  '__module__' : 'instance_pb2'
+  # @@protoc_insertion_point(class_scope:proto.CreateImageResponse)
+  })
+_sym_db.RegisterMessage(CreateImageResponse)
+
+DeleteImageRequest = _reflection.GeneratedProtocolMessageType('DeleteImageRequest', (_message.Message,), {
+  'DESCRIPTOR' : _DELETEIMAGEREQUEST,
+  '__module__' : 'instance_pb2'
+  # @@protoc_insertion_point(class_scope:proto.DeleteImageRequest)
+  })
+_sym_db.RegisterMessage(DeleteImageRequest)
+
+DeleteImageResponse = _reflection.GeneratedProtocolMessageType('DeleteImageResponse', (_message.Message,), {
+  'DESCRIPTOR' : _DELETEIMAGERESPONSE,
+  '__module__' : 'instance_pb2'
+  # @@protoc_insertion_point(class_scope:proto.DeleteImageResponse)
+  })
+_sym_db.RegisterMessage(DeleteImageResponse)
 
 CreateInstanceRequest = _reflection.GeneratedProtocolMessageType('CreateInstanceRequest', (_message.Message,), {
   'DESCRIPTOR' : _CREATEINSTANCEREQUEST,
@@ -303,13 +491,33 @@ _INSTANCESERVICE = _descriptor.ServiceDescriptor(
   index=0,
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_start=361,
-  serialized_end=621,
+  serialized_start=598,
+  serialized_end=1002,
   methods=[
+  _descriptor.MethodDescriptor(
+    name='CreateImage',
+    full_name='proto.InstanceService.CreateImage',
+    index=0,
+    containing_service=None,
+    input_type=_CREATEIMAGEREQUEST,
+    output_type=_CREATEIMAGERESPONSE,
+    serialized_options=None,
+    create_key=_descriptor._internal_create_key,
+  ),
+  _descriptor.MethodDescriptor(
+    name='DeleteImage',
+    full_name='proto.InstanceService.DeleteImage',
+    index=1,
+    containing_service=None,
+    input_type=_DELETEIMAGEREQUEST,
+    output_type=_DELETEIMAGERESPONSE,
+    serialized_options=None,
+    create_key=_descriptor._internal_create_key,
+  ),
   _descriptor.MethodDescriptor(
     name='CreateInstance',
     full_name='proto.InstanceService.CreateInstance',
-    index=0,
+    index=2,
     containing_service=None,
     input_type=_CREATEINSTANCEREQUEST,
     output_type=_CREATEINSTANCERESPONSE,
@@ -319,7 +527,7 @@ _INSTANCESERVICE = _descriptor.ServiceDescriptor(
   _descriptor.MethodDescriptor(
     name='GetInstanceInfo',
     full_name='proto.InstanceService.GetInstanceInfo',
-    index=1,
+    index=3,
     containing_service=None,
     input_type=_INSTANCEINFOREQUEST,
     output_type=_INSTANCEINFORESPONSE,
@@ -329,7 +537,7 @@ _INSTANCESERVICE = _descriptor.ServiceDescriptor(
   _descriptor.MethodDescriptor(
     name='OperateInstance',
     full_name='proto.InstanceService.OperateInstance',
-    index=2,
+    index=4,
     containing_service=None,
     input_type=_OPERATEINSTANCEREQUEST,
     output_type=_OPERATEINSTANCERESPONSE,

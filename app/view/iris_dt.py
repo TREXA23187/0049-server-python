@@ -7,7 +7,7 @@ import os
 
 filename = 'rf.pkl'
 current_fonder_path = os.path.split(os.path.realpath(__file__))[0]
-model_path = os.path.join(current_fonder_path, "../..", "models", filename)
+model_path = os.path.join(current_fonder_path, "../..", "model", filename)
 
 print(model_path)
 

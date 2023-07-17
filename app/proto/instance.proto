@@ -4,15 +4,35 @@ package proto;
 //python -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. ./instance.proto
 
 service InstanceService {
+  rpc CreateImage(CreateImageRequest) returns (CreateImageResponse){}
+  rpc DeleteImage(DeleteImageRequest) returns (DeleteImageResponse){}
+
   rpc CreateInstance(CreateInstanceRequest) returns (CreateInstanceResponse){}
   rpc GetInstanceInfo(InstanceInfoRequest) returns (InstanceInfoResponse){}
   rpc OperateInstance(OperateInstanceRequest) returns (OperateInstanceResponse){}
 }
 
+message CreateImageRequest {
+  string repository = 1;
+  string tag = 2;
+  bytes data_file = 3;
+  bytes model_file = 4;
+}
+message CreateImageResponse{
+  string image_id = 1;
+  int64 image_size = 2;
+}
+message DeleteImageRequest {
+  string repository = 1;
+  string tag = 2;
+}
+message DeleteImageResponse{
+  bool success = 1;
+}
+
 message CreateInstanceRequest {
-  string template = 1;
-  string model = 2;
-  string url = 3;
+  string image_name = 1;
+  string url = 2;
 }
 message CreateInstanceResponse{
   string instance_id = 1;

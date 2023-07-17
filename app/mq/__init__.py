@@ -2,15 +2,15 @@ import time
 import pika
 
 
-def push():
+def push_message(message):
+    time.sleep(2)
     connection = pika.BlockingConnection(pika.ConnectionParameters('localhost'))
     channel = connection.channel()
 
     channel.queue_declare(queue='task_finished_queue', durable=True)
 
-    message = 'Hello World!'.encode('utf-8')
     channel.basic_publish(exchange='',
-                          routing_key='task_queue',
+                          routing_key='task_finished_queue',
                           body=bytes(message),
                           properties=pika.BasicProperties(
                               delivery_mode=2,  # make message persistent

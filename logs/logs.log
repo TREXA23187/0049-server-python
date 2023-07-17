@@ -10864,3 +10864,181 @@ DEBUG config.py:25 Found file at path: /Users/chenxingyang/.docker/config.json
 DEBUG auth.py:187 Found 'credsStore' section
 DEBUG connectionpool.py:546 http://localhost:None "GET /version HTTP/1.1" 200 None
 DEBUG connectionpool.py:546 http://localhost:None "GET /v1.43/containers/32c580a5c8dcdef817e15ea9e79f184160bd3c9eb38a145548e04726d13b78b1/json HTTP/1.1" 200 None
+ERROR _server.py:453 Exception calling application: 500 Server Error for http+docker://localhost/v1.43/containers/1404d7d37c164b12256cc1c5cfb4f64621cc226f19cf471377a9f9c37c0e9275/start: Internal Server Error ("driver failed programming external connectivity on endpoint hopeful_napier (c155b3494197d6b698a50572c648cc78eec0ff40a490cb9ef4d8921d24148674): Bind for 0.0.0.0:15006 failed: port is already allocated")
+Traceback (most recent call last):
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/docker/api/client.py", line 268, in _raise_for_status
+    response.raise_for_status()
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: Internal Server Error for url: http+docker://localhost/v1.43/containers/1404d7d37c164b12256cc1c5cfb4f64621cc226f19cf471377a9f9c37c0e9275/start
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/grpc/_server.py", line 443, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/Users/chenxingyang/PycharmProjects/0049-server-python/app/server/instance_server.py", line 8, in CreateInstance
+    container = docker_utils.run_container('flask-demo', request.url)
+  File "/Users/chenxingyang/PycharmProjects/0049-server-python/app/utils/docker_utils.py", line 22, in run_container
+    container = client.containers.run(image_name, ports={f'5005/tcp': port}, detach=True)
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/docker/models/containers.py", line 865, in run
+    container.start()
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/docker/models/containers.py", line 406, in start
+    return self.client.api.start(self.id, **kwargs)
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/docker/utils/decorators.py", line 19, in wrapped
+    return f(self, resource_id, *args, **kwargs)
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/docker/api/container.py", line 1127, in start
+    self._raise_for_status(res)
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/docker/api/client.py", line 270, in _raise_for_status
+    raise create_api_error_from_http_exception(e) from e
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/docker/errors.py", line 39, in create_api_error_from_http_exception
+    raise cls(e, response=response, explanation=explanation) from e
+docker.errors.APIError: 500 Server Error for http+docker://localhost/v1.43/containers/1404d7d37c164b12256cc1c5cfb4f64621cc226f19cf471377a9f9c37c0e9275/start: Internal Server Error ("driver failed programming external connectivity on endpoint hopeful_napier (c155b3494197d6b698a50572c648cc78eec0ff40a490cb9ef4d8921d24148674): Bind for 0.0.0.0:15006 failed: port is already allocated")
+ERROR io_services_utils.py:796 Socket EOF; <socket.socket fd=10, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=6, laddr=('::1', 57991, 0, 0), raddr=('::1', 5672, 0, 0)>
+ERROR base_connection.py:445 Transport indicated EOF.
+ERROR base_connection.py:428 connection_lost: StreamLostError: ('Transport indicated EOF',)
+ERROR blocking_connection.py:521 Unexpected connection close detected: StreamLostError: ('Transport indicated EOF',)
+ERROR _server.py:453 Exception calling application: 121901335 has type int, but expected one of: bytes, unicode
+Traceback (most recent call last):
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/grpc/_server.py", line 443, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/Users/chenxingyang/PycharmProjects/0049-server-python/app/server/instance_server.py", line 16, in CreateImage
+    return proto.instance_pb2.CreateImageResponse(image_id=image.id, image_size=image.attrs['Size'])
+TypeError: 121901335 has type int, but expected one of: bytes, unicode
+ERROR _server.py:453 Exception calling application: 'Status'
+Traceback (most recent call last):
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/grpc/_server.py", line 443, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/Users/chenxingyang/PycharmProjects/0049-server-python/app/server/instance_server.py", line 16, in CreateImage
+    print(image.attrs['Status'])
+KeyError: 'Status'
+ERROR _server.py:453 Exception calling application: 'Image' object has no attribute 'status'
+Traceback (most recent call last):
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/grpc/_server.py", line 443, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/Users/chenxingyang/PycharmProjects/0049-server-python/app/server/instance_server.py", line 16, in CreateImage
+    print(image.status)
+AttributeError: 'Image' object has no attribute 'status'
+ERROR _server.py:453 Exception calling application: not enough values to unpack (expected 2, got 1)
+Traceback (most recent call last):
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/grpc/_server.py", line 443, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/Users/chenxingyang/PycharmProjects/0049-server-python/app/server/instance_server.py", line 8, in CreateInstance
+    container = docker_utils.run_container(request.image_name, request.url)
+  File "/Users/chenxingyang/PycharmProjects/0049-server-python/app/utils/docker_utils.py", line 21, in run_container
+    [ip, port] = str.split(url, ':')
+ValueError: not enough values to unpack (expected 2, got 1)
+ERROR _server.py:453 Exception calling application: string argument without an encoding
+Traceback (most recent call last):
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/grpc/_server.py", line 443, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/Users/chenxingyang/PycharmProjects/0049-server-python/app/server/instance_server.py", line 17, in CreateImage
+    push_message(request.repository)
+  File "/Users/chenxingyang/PycharmProjects/0049-server-python/app/mq/__init__.py", line 13, in push_message
+    body=bytes(message),
+TypeError: string argument without an encoding
+ERROR _server.py:453 Exception calling application: 'str' object cannot be interpreted as an integer
+Traceback (most recent call last):
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/grpc/_server.py", line 443, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/Users/chenxingyang/PycharmProjects/0049-server-python/app/server/instance_server.py", line 22, in CreateImage
+    push_message(message)
+  File "/Users/chenxingyang/PycharmProjects/0049-server-python/app/mq/__init__.py", line 13, in push_message
+    body=bytes(message),
+TypeError: 'str' object cannot be interpreted as an integer
+ERROR _server.py:453 Exception calling application: 'int' object has no attribute 'value'
+Traceback (most recent call last):
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/grpc/_server.py", line 443, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/Users/chenxingyang/PycharmProjects/0049-server-python/app/server/instance_server.py", line 16, in CreateImage
+    f.write(chunk.value)
+AttributeError: 'int' object has no attribute 'value'
+ERROR _server.py:453 Exception calling application: 'int' object has no attribute 'value'
+Traceback (most recent call last):
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/grpc/_server.py", line 443, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/Users/chenxingyang/PycharmProjects/0049-server-python/app/server/instance_server.py", line 16, in CreateImage
+    f.write(chunk)
+AttributeError: 'int' object has no attribute 'value'
+ERROR _server.py:453 Exception calling application: a bytes-like object is required, not 'int'
+Traceback (most recent call last):
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/grpc/_server.py", line 443, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/Users/chenxingyang/PycharmProjects/0049-server-python/app/server/instance_server.py", line 16, in CreateImage
+    f.write(chunk)
+TypeError: a bytes-like object is required, not 'int'
+ERROR _server.py:453 Exception calling application: [Errno 30] Read-only file system: '/image'
+Traceback (most recent call last):
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/grpc/_server.py", line 443, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/Users/chenxingyang/PycharmProjects/0049-server-python/app/server/instance_server.py", line 24, in CreateImage
+    shutil.copytree(src_folder, dst_folder)
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/shutil.py", line 557, in copytree
+    return _copytree(entries=entries, src=src, dst=dst, symlinks=symlinks,
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/shutil.py", line 458, in _copytree
+    os.makedirs(dst, exist_ok=dirs_exist_ok)
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/os.py", line 213, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/os.py", line 223, in makedirs
+    mkdir(name, mode)
+OSError: [Errno 30] Read-only file system: '/image'
+ERROR _server.py:453 Exception calling application: [Errno 30] Read-only file system: '/flask_demo'
+Traceback (most recent call last):
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/grpc/_server.py", line 443, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/Users/chenxingyang/PycharmProjects/0049-server-python/app/server/instance_server.py", line 24, in CreateImage
+    shutil.copytree(src_folder, dst_folder)
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/shutil.py", line 557, in copytree
+    return _copytree(entries=entries, src=src, dst=dst, symlinks=symlinks,
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/shutil.py", line 458, in _copytree
+    os.makedirs(dst, exist_ok=dirs_exist_ok)
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/os.py", line 223, in makedirs
+    mkdir(name, mode)
+OSError: [Errno 30] Read-only file system: '/flask_demo'
+ERROR _server.py:453 Exception calling application: Cmd('git') failed due to: exit code(128)
+  cmdline: git clone -v -- https://github.com/TREXA23187/flask_demo image/to_build
+  stderr: 'fatal: destination path 'image/to_build' already exists and is not an empty directory.
+'
+Traceback (most recent call last):
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/grpc/_server.py", line 443, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/Users/chenxingyang/PycharmProjects/0049-server-python/app/server/instance_server.py", line 16, in CreateImage
+    Repo.clone_from("https://github.com/TREXA23187/flask_demo", "image/to_build")
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/git/repo/base.py", line 1327, in clone_from
+    return cls._clone(
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/git/repo/base.py", line 1236, in _clone
+    finalize_process(proc, stderr=stderr)
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/git/util.py", line 419, in finalize_process
+    proc.wait(**kwargs)
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/git/cmd.py", line 604, in wait
+    raise GitCommandError(remove_password_if_present(self.args), status, errstr)
+git.exc.GitCommandError: Cmd('git') failed due to: exit code(128)
+  cmdline: git clone -v -- https://github.com/TREXA23187/flask_demo image/to_build
+  stderr: 'fatal: destination path 'image/to_build' already exists and is not an empty directory.
+'
+ERROR _common.py:88 Exception serializing message!
+Traceback (most recent call last):
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/grpc/_common.py", line 86, in _transform
+    return transformer(message)
+TypeError: descriptor 'SerializeToString' for 'google.protobuf.pyext._message.CMessage' objects doesn't apply to a 'NoneType' object
+ERROR _server.py:453 Exception calling application: Cmd('git') failed due to: exit code(128)
+  cmdline: git clone -v -- https://github.com/TREXA23187/flask_demo image_to_build
+  stderr: 'fatal: destination path 'image_to_build' already exists and is not an empty directory.
+'
+Traceback (most recent call last):
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/grpc/_server.py", line 443, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/Users/chenxingyang/PycharmProjects/0049-server-python/app/server/instance_server.py", line 18, in CreateImage
+    Repo.clone_from("https://github.com/TREXA23187/flask_demo", image_to_build_path)
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/git/repo/base.py", line 1327, in clone_from
+    return cls._clone(
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/git/repo/base.py", line 1236, in _clone
+    finalize_process(proc, stderr=stderr)
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/git/util.py", line 419, in finalize_process
+    proc.wait(**kwargs)
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/git/cmd.py", line 604, in wait
+    raise GitCommandError(remove_password_if_present(self.args), status, errstr)
+git.exc.GitCommandError: Cmd('git') failed due to: exit code(128)
+  cmdline: git clone -v -- https://github.com/TREXA23187/flask_demo image_to_build
+  stderr: 'fatal: destination path 'image_to_build' already exists and is not an empty directory.
+'

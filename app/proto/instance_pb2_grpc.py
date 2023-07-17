@@ -16,27 +16,49 @@ class InstanceServiceStub(object):
         Args:
             channel: A grpc.Channel.
         """
+        self.CreateImage = channel.unary_unary(
+            '/proto.InstanceService/CreateImage',
+            request_serializer=instance__pb2.CreateImageRequest.SerializeToString,
+            response_deserializer=instance__pb2.CreateImageResponse.FromString,
+        )
+        self.DeleteImage = channel.unary_unary(
+            '/proto.InstanceService/DeleteImage',
+            request_serializer=instance__pb2.DeleteImageRequest.SerializeToString,
+            response_deserializer=instance__pb2.DeleteImageResponse.FromString,
+        )
         self.CreateInstance = channel.unary_unary(
-                '/proto.InstanceService/CreateInstance',
-                request_serializer=instance__pb2.CreateInstanceRequest.SerializeToString,
-                response_deserializer=instance__pb2.CreateInstanceResponse.FromString,
-                )
+            '/proto.InstanceService/CreateInstance',
+            request_serializer=instance__pb2.CreateInstanceRequest.SerializeToString,
+            response_deserializer=instance__pb2.CreateInstanceResponse.FromString,
+        )
         self.GetInstanceInfo = channel.unary_unary(
-                '/proto.InstanceService/GetInstanceInfo',
-                request_serializer=instance__pb2.InstanceInfoRequest.SerializeToString,
-                response_deserializer=instance__pb2.InstanceInfoResponse.FromString,
-                )
+            '/proto.InstanceService/GetInstanceInfo',
+            request_serializer=instance__pb2.InstanceInfoRequest.SerializeToString,
+            response_deserializer=instance__pb2.InstanceInfoResponse.FromString,
+        )
         self.OperateInstance = channel.unary_unary(
-                '/proto.InstanceService/OperateInstance',
-                request_serializer=instance__pb2.OperateInstanceRequest.SerializeToString,
-                response_deserializer=instance__pb2.OperateInstanceResponse.FromString,
-                )
+            '/proto.InstanceService/OperateInstance',
+            request_serializer=instance__pb2.OperateInstanceRequest.SerializeToString,
+            response_deserializer=instance__pb2.OperateInstanceResponse.FromString,
+        )
 
 
 class InstanceServiceServicer(object):
     """python -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. ./instance.proto
 
     """
+
+    def CreateImage(self, request, context):
+        """Missing associated documentation comment in .proto file."""
+        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+        context.set_details('Method not implemented!')
+        raise NotImplementedError('Method not implemented!')
+
+    def DeleteImage(self, request, context):
+        """Missing associated documentation comment in .proto file."""
+        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+        context.set_details('Method not implemented!')
+        raise NotImplementedError('Method not implemented!')
 
     def CreateInstance(self, request, context):
         """Missing associated documentation comment in .proto file."""
@@ -59,80 +81,124 @@ class InstanceServiceServicer(object):
 
 def add_InstanceServiceServicer_to_server(servicer, server):
     rpc_method_handlers = {
-            'CreateInstance': grpc.unary_unary_rpc_method_handler(
-                    servicer.CreateInstance,
-                    request_deserializer=instance__pb2.CreateInstanceRequest.FromString,
-                    response_serializer=instance__pb2.CreateInstanceResponse.SerializeToString,
-            ),
-            'GetInstanceInfo': grpc.unary_unary_rpc_method_handler(
-                    servicer.GetInstanceInfo,
-                    request_deserializer=instance__pb2.InstanceInfoRequest.FromString,
-                    response_serializer=instance__pb2.InstanceInfoResponse.SerializeToString,
-            ),
-            'OperateInstance': grpc.unary_unary_rpc_method_handler(
-                    servicer.OperateInstance,
-                    request_deserializer=instance__pb2.OperateInstanceRequest.FromString,
-                    response_serializer=instance__pb2.OperateInstanceResponse.SerializeToString,
-            ),
+        'CreateImage': grpc.unary_unary_rpc_method_handler(
+            servicer.CreateImage,
+            request_deserializer=instance__pb2.CreateImageRequest.FromString,
+            response_serializer=instance__pb2.CreateImageResponse.SerializeToString,
+        ),
+        'DeleteImage': grpc.unary_unary_rpc_method_handler(
+            servicer.DeleteImage,
+            request_deserializer=instance__pb2.DeleteImageRequest.FromString,
+            response_serializer=instance__pb2.DeleteImageResponse.SerializeToString,
+        ),
+        'CreateInstance': grpc.unary_unary_rpc_method_handler(
+            servicer.CreateInstance,
+            request_deserializer=instance__pb2.CreateInstanceRequest.FromString,
+            response_serializer=instance__pb2.CreateInstanceResponse.SerializeToString,
+        ),
+        'GetInstanceInfo': grpc.unary_unary_rpc_method_handler(
+            servicer.GetInstanceInfo,
+            request_deserializer=instance__pb2.InstanceInfoRequest.FromString,
+            response_serializer=instance__pb2.InstanceInfoResponse.SerializeToString,
+        ),
+        'OperateInstance': grpc.unary_unary_rpc_method_handler(
+            servicer.OperateInstance,
+            request_deserializer=instance__pb2.OperateInstanceRequest.FromString,
+            response_serializer=instance__pb2.OperateInstanceResponse.SerializeToString,
+        ),
     }
     generic_handler = grpc.method_handlers_generic_handler(
-            'proto.InstanceService', rpc_method_handlers)
+        'proto.InstanceService', rpc_method_handlers)
     server.add_generic_rpc_handlers((generic_handler,))
 
 
- # This class is part of an EXPERIMENTAL API.
+# This class is part of an EXPERIMENTAL API.
 class InstanceService(object):
     """python -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. ./instance.proto
 
     """
 
     @staticmethod
+    def CreateImage(request,
+                    target,
+                    options=(),
+                    channel_credentials=None,
+                    call_credentials=None,
+                    insecure=False,
+                    compression=None,
+                    wait_for_ready=None,
+                    timeout=None,
+                    metadata=None):
+        return grpc.experimental.unary_unary(request, target, '/proto.InstanceService/CreateImage',
+                                             instance__pb2.CreateImageRequest.SerializeToString,
+                                             instance__pb2.CreateImageResponse.FromString,
+                                             options, channel_credentials,
+                                             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
+
+    @staticmethod
+    def DeleteImage(request,
+                    target,
+                    options=(),
+                    channel_credentials=None,
+                    call_credentials=None,
+                    insecure=False,
+                    compression=None,
+                    wait_for_ready=None,
+                    timeout=None,
+                    metadata=None):
+        return grpc.experimental.unary_unary(request, target, '/proto.InstanceService/DeleteImage',
+                                             instance__pb2.DeleteImageRequest.SerializeToString,
+                                             instance__pb2.DeleteImageResponse.FromString,
+                                             options, channel_credentials,
+                                             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
+
+    @staticmethod
     def CreateInstance(request,
-            target,
-            options=(),
-            channel_credentials=None,
-            call_credentials=None,
-            insecure=False,
-            compression=None,
-            wait_for_ready=None,
-            timeout=None,
-            metadata=None):
+                       target,
+                       options=(),
+                       channel_credentials=None,
+                       call_credentials=None,
+                       insecure=False,
+                       compression=None,
+                       wait_for_ready=None,
+                       timeout=None,
+                       metadata=None):
         return grpc.experimental.unary_unary(request, target, '/proto.InstanceService/CreateInstance',
-            instance__pb2.CreateInstanceRequest.SerializeToString,
-            instance__pb2.CreateInstanceResponse.FromString,
-            options, channel_credentials,
-            insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
+                                             instance__pb2.CreateInstanceRequest.SerializeToString,
+                                             instance__pb2.CreateInstanceResponse.FromString,
+                                             options, channel_credentials,
+                                             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
     @staticmethod
     def GetInstanceInfo(request,
-            target,
-            options=(),
-            channel_credentials=None,
-            call_credentials=None,
-            insecure=False,
-            compression=None,
-            wait_for_ready=None,
-            timeout=None,
-            metadata=None):
+                        target,
+                        options=(),
+                        channel_credentials=None,
+                        call_credentials=None,
+                        insecure=False,
+                        compression=None,
+                        wait_for_ready=None,
+                        timeout=None,
+                        metadata=None):
         return grpc.experimental.unary_unary(request, target, '/proto.InstanceService/GetInstanceInfo',
-            instance__pb2.InstanceInfoRequest.SerializeToString,
-            instance__pb2.InstanceInfoResponse.FromString,
-            options, channel_credentials,
-            insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
+                                             instance__pb2.InstanceInfoRequest.SerializeToString,
+                                             instance__pb2.InstanceInfoResponse.FromString,
+                                             options, channel_credentials,
+                                             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
     @staticmethod
     def OperateInstance(request,
-            target,
-            options=(),
-            channel_credentials=None,
-            call_credentials=None,
-            insecure=False,
-            compression=None,
-            wait_for_ready=None,
-            timeout=None,
-            metadata=None):
+                        target,
+                        options=(),
+                        channel_credentials=None,
+                        call_credentials=None,
+                        insecure=False,
+                        compression=None,
+                        wait_for_ready=None,
+                        timeout=None,
+                        metadata=None):
         return grpc.experimental.unary_unary(request, target, '/proto.InstanceService/OperateInstance',
-            instance__pb2.OperateInstanceRequest.SerializeToString,
-            instance__pb2.OperateInstanceResponse.FromString,
-            options, channel_credentials,
-            insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
+                                             instance__pb2.OperateInstanceRequest.SerializeToString,
+                                             instance__pb2.OperateInstanceResponse.FromString,
+                                             options, channel_credentials,
+                                             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)

@@ -9,8 +9,22 @@ def build_image(dockerfile_path, tag):
     image, build_logs = client.images.build(path=dockerfile_path, tag=tag)
 
     # build log
-    for log in build_logs:
-        print(log)
+    # for log in build_logs:
+    #     print(log)
+
+    return image
+
+
+def delete_image(image_name, tag):
+    try:
+        client = docker.from_env()
+
+        client.images.remove(f"{image_name}:{tag}")
+
+        return True
+    except Exception as e:
+        print("delete_image error: ", e)
+        return False
 
 
 def run_container(image_name, url):
@@ -35,7 +49,8 @@ def start_container(container_name_or_id):
         container.start()
 
         return True
-    except Exception:
+    except Exception as e:
+        print("start_container error: ", e)
         return False
 
 
@@ -51,7 +66,8 @@ def stop_container(container_name_or_id, should_remove=False):
             container.remove()
 
         return True
-    except Exception:
+    except Exception as e:
+        print("stop_container error: ", e)
         return False
 
 
@@ -69,6 +85,4 @@ def get_container_status(container_name_or_id):
 
 if __name__ == '__main__':
     # create_image_and_run_container('/Users/chenxingyang/PycharmProjects/flask_demo', 'flask-demo',
-    #                                'flask-demo')
-    # run_container('flask-demo')
-    print(get_container_status('b369bd73ca88235dd1d6492d014be3797e8cfb5b494128c2df3dd149058ad86d'))
+    build_image('/Users/chenxingyang/PycharmProjects/flask_demo', 'flask-demo:latest')
