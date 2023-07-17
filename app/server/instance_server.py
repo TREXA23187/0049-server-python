@@ -4,6 +4,8 @@ from app import proto
 from ..utils import docker_utils
 from ..mq import push_message
 from git import Repo
+import json
+from google.protobuf.json_format import MessageToDict
 
 
 class InstanceService(proto.instance_pb2_grpc.InstanceServiceServicer):
@@ -22,6 +24,9 @@ class InstanceService(proto.instance_pb2_grpc.InstanceServiceServicer):
 
         with open(os.path.join(image_to_build_path, "model/enter.py"), 'wb') as model_file:
             model_file.write(request.model_file)
+
+        with open(os.path.join(image_to_build_path, "config.json"), 'w') as config_file:
+            json.dump(MessageToDict(request.image_config), config_file)
 
         image = docker_utils.build_image(image_to_build_path, f"{request.repository}:{request.tag}")
 

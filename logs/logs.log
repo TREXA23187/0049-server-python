@@ -11042,3 +11042,53 @@ git.exc.GitCommandError: Cmd('git') failed due to: exit code(128)
   cmdline: git clone -v -- https://github.com/TREXA23187/flask_demo image_to_build
   stderr: 'fatal: destination path 'image_to_build' already exists and is not an empty directory.
 '
+ERROR _server.py:453 Exception calling application: Object of type ImageConfig is not JSON serializable
+Traceback (most recent call last):
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/grpc/_server.py", line 443, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/Users/chenxingyang/PycharmProjects/0049-server-python/app/server/instance_server.py", line 28, in CreateImage
+    json.dump(request.image_config, config_file)
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/json/__init__.py", line 179, in dump
+    for chunk in iterable:
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/json/encoder.py", line 438, in _iterencode
+    o = _default(o)
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ImageConfig is not JSON serializable
+ERROR _server.py:453 Exception calling application: Cmd('git') failed due to: exit code(128)
+  cmdline: git clone -v -- https://github.com/TREXA23187/flask_demo image_to_build
+  stderr: 'fatal: destination path 'image_to_build' already exists and is not an empty directory.
+'
+Traceback (most recent call last):
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/grpc/_server.py", line 443, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/Users/chenxingyang/PycharmProjects/0049-server-python/app/server/instance_server.py", line 19, in CreateImage
+    Repo.clone_from("https://github.com/TREXA23187/flask_demo", image_to_build_path)
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/git/repo/base.py", line 1327, in clone_from
+    return cls._clone(
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/git/repo/base.py", line 1236, in _clone
+    finalize_process(proc, stderr=stderr)
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/git/util.py", line 419, in finalize_process
+    proc.wait(**kwargs)
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/git/cmd.py", line 604, in wait
+    raise GitCommandError(remove_password_if_present(self.args), status, errstr)
+git.exc.GitCommandError: Cmd('git') failed due to: exit code(128)
+  cmdline: git clone -v -- https://github.com/TREXA23187/flask_demo image_to_build
+  stderr: 'fatal: destination path 'image_to_build' already exists and is not an empty directory.
+'
+ERROR _server.py:453 Exception calling application: 'ImageConfig' object is not iterable
+Traceback (most recent call last):
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/grpc/_server.py", line 443, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/Users/chenxingyang/PycharmProjects/0049-server-python/app/server/instance_server.py", line 28, in CreateImage
+    json.dump(dict(request.image_config), config_file)
+TypeError: 'ImageConfig' object is not iterable
+ERROR _server.py:453 Exception calling application: a bytes-like object is required, not 'str'
+Traceback (most recent call last):
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/grpc/_server.py", line 443, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/Users/chenxingyang/PycharmProjects/0049-server-python/app/server/instance_server.py", line 29, in CreateImage
+    json.dump(MessageToDict(request.image_config), config_file)
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/json/__init__.py", line 180, in dump
+    fp.write(chunk)
+TypeError: a bytes-like object is required, not 'str'

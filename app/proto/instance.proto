@@ -12,11 +12,19 @@ service InstanceService {
   rpc OperateInstance(OperateInstanceRequest) returns (OperateInstanceResponse){}
 }
 
+message ImageConfig {
+  string type = 1;
+  string model = 2;
+  string template = 3;
+  string title = 4;
+}
+
 message CreateImageRequest {
   string repository = 1;
   string tag = 2;
   bytes data_file = 3;
   bytes model_file = 4;
+  ImageConfig image_config = 5;
 }
 message CreateImageResponse{
   string image_id = 1;
