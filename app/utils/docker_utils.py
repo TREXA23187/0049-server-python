@@ -72,7 +72,7 @@ def stop_container(container_name_or_id, should_remove=False):
 
 
 def get_container_status(container_name_or_id):
-    client = docker.DockerClient()
+    client = docker.from_env()
 
     try:
         container = client.containers.get(container_name_or_id)

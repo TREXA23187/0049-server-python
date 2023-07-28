@@ -1,5 +1,5 @@
 from app.server import create_server, serve
-from app.mq import consume_rabbitmq
+# from app.mq import consume_rabbitmq
 import threading
 
 DEVELOPMENT_MODE = "development"
@@ -12,11 +12,12 @@ def start_serve():
 
 
 if __name__ == '__main__':
-    serve_thread = threading.Thread(target=start_serve)
-    mq_thread = threading.Thread(target=consume_rabbitmq)
+    start_serve()
+    # serve_thread = threading.Thread(target=start_serve)
+    # mq_thread = threading.Thread(target=consume_rabbitmq)
 
-    serve_thread.start()
-    mq_thread.start()
+    # serve_thread.start()
+    # mq_thread.start()
 
-    serve_thread.join()
-    mq_thread.join()
+    # serve_thread.join()
+    # mq_thread.join()
