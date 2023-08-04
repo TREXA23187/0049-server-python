@@ -2,7 +2,7 @@ import os.path
 import shutil
 from app import proto
 from ..utils import docker_utils
-# from ..mq import push_message
+from ..mq import push_message
 from git import Repo
 import json
 from google.protobuf.json_format import MessageToDict
@@ -19,7 +19,7 @@ class InstanceService(proto.instance_pb2_grpc.InstanceServiceServicer):
         try:
             if os.path.exists("image_to_build"):
                 shutil.rmtree("image_to_build")
-                
+
             image_to_build_path = "image_to_build"
             Repo.clone_from("https://github.com/TREXA23187/flask_demo", image_to_build_path)
 
@@ -33,11 +33,13 @@ class InstanceService(proto.instance_pb2_grpc.InstanceServiceServicer):
 
             if request.image_config:
                 with open(os.path.join(image_to_build_path, "config.json"), 'w') as config_file:
-                    json.dump(MessageToDict(request.image_config), config_file)
+                    config = MessageToDict(request.image_config)
+                    config["dataLabel"] = json.loads(config["dataLabel"])
+
+                    json.dump(config, config_file)
 
             image = docker_utils.build_image(image_to_build_path, f"{request.repository}:{request.tag}")
 
-            # push_message(request.repository.encode('utf-8'))
             return proto.instance_pb2.CreateImageResponse(image_id=image.id, image_size=image.attrs['Size'])
         except Exception as e:
             print("create image error: ", e)
