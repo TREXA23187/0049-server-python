@@ -171,3 +171,13 @@ Traceback (most recent call last):
   File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/grpc/_common.py", line 86, in _transform
     return transformer(message)
 TypeError: descriptor 'SerializeToString' for 'google.protobuf.pyext._message.CMessage' objects doesn't apply to a 'NoneType' object
+ERROR _common.py:88 Exception serializing message!
+Traceback (most recent call last):
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/grpc/_common.py", line 86, in _transform
+    return transformer(message)
+TypeError: descriptor 'SerializeToString' for 'google.protobuf.pyext._message.CMessage' objects doesn't apply to a 'NoneType' object
+ERROR _common.py:88 Exception serializing message!
+Traceback (most recent call last):
+  File "/Users/chenxingyang/opt/anaconda3/envs/flask/lib/python3.8/site-packages/grpc/_common.py", line 86, in _transform
+    return transformer(message)
+TypeError: descriptor 'SerializeToString' for 'google.protobuf.pyext._message.CMessage' objects doesn't apply to a 'NoneType' object

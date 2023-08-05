@@ -3,7 +3,6 @@ from concurrent import futures
 import atexit
 from app import proto
 
-from . import file_server
 from . import instance_server
 
 _HOST = 'localhost'
@@ -17,7 +16,6 @@ def create_server():
     server = grpc.server(futures.ThreadPoolExecutor(max_workers=_MAX_WORKERS))  # create server
 
     # Add derived interface services to the server (implementing their own processing functions)
-    proto.file_pb2_grpc.add_FileServiceServicer_to_server(file_server.FileService(), server)
     proto.instance_pb2_grpc.add_InstanceServiceServicer_to_server(instance_server.InstanceService(), server)
 
     server.add_insecure_port(_HOST + ':' + _PORT)

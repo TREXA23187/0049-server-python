@@ -15,7 +15,7 @@ class InstanceService(proto.instance_pb2_grpc.InstanceServiceServicer):
 
         return proto.instance_pb2.CreateInstanceResponse(instance_id=container.id, instance_name=container.name)
 
-    def CreateImage(self, request, context):
+    def CreateTrainingImage(self, request, context):
         try:
             if os.path.exists("image_to_build"):
                 shutil.rmtree("image_to_build")
@@ -35,6 +35,34 @@ class InstanceService(proto.instance_pb2_grpc.InstanceServiceServicer):
                 with open(os.path.join(image_to_build_path, "config.json"), 'w') as config_file:
                     config = MessageToDict(request.image_config)
                     config["dataLabel"] = json.loads(config["dataLabel"])
+
+                    json.dump(config, config_file)
+
+            image = docker_utils.build_image(image_to_build_path, f"{request.repository}:{request.tag}")
+
+            return proto.instance_pb2.CreateImageResponse(image_id=image.id, image_size=image.attrs['Size'])
+        except Exception as e:
+            print("create image error: ", e)
+
+        finally:
+            if os.path.exists("image_to_build"):
+                shutil.rmtree("image_to_build")
+
+    def CreateDeploymentImage(self, request, context):
+        try:
+            if os.path.exists("image_to_build"):
+                shutil.rmtree("image_to_build")
+
+            image_to_build_path = "image_to_build"
+            Repo.clone_from("https://github.com/TREXA23187/flask_demo", image_to_build_path)
+
+            if request.trained_model_file:
+                with open(os.path.join(image_to_build_path, "model/model.pickle"), 'wb') as model_file:
+                    model_file.write(request.trained_model_file)
+
+            if request.image_config:
+                with open(os.path.join(image_to_build_path, "config.json"), 'w') as config_file:
+                    config = MessageToDict(request.image_config)
 
                     json.dump(config, config_file)
 

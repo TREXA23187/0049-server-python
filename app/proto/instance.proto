@@ -4,7 +4,8 @@ package proto;
 //python -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. ./instance.proto
 
 service InstanceService {
-  rpc CreateImage(CreateImageRequest) returns (CreateImageResponse){}
+  rpc CreateTrainingImage(CreateTrainingImageRequest) returns (CreateImageResponse){}
+  rpc CreateDeploymentImage(CreateDeploymentImageRequest) returns (CreateImageResponse){}
   rpc DeleteImage(DeleteImageRequest) returns (DeleteImageResponse){}
 
   rpc CreateInstance(CreateInstanceRequest) returns (CreateInstanceResponse){}
@@ -22,17 +23,25 @@ message ImageConfig {
   string title = 7;
 }
 
-message CreateImageRequest {
+message CreateTrainingImageRequest {
   string repository = 1;
   string tag = 2;
   bytes data_file = 3;
   bytes model_file = 4;
   ImageConfig image_config = 5;
 }
+message CreateDeploymentImageRequest {
+  string repository = 1;
+  string tag = 2;
+  string template = 3;
+  bytes trained_model_file = 4;
+  ImageConfig image_config = 5;
+}
 message CreateImageResponse{
   string image_id = 1;
   int64 image_size = 2;
 }
+
 message DeleteImageRequest {
   string repository = 1;
   string tag = 2;

@@ -19,7 +19,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x0einstance.proto\x12\x05proto\"\x86\x01\n\x0bImageConfig\x12\x0f\n\x07task_id\x18\x01 \x01(\t\x12\x0c\n\x04type\x18\x02 \x01(\t\x12\r\n\x05model\x18\x03 \x01(\t\x12\x12\n\ndata_label\x18\x04 \x01(\t\x12\x14\n\x0ctarget_label\x18\x05 \x01(\t\x12\x10\n\x08template\x18\x06 \x01(\t\x12\r\n\x05title\x18\x07 \x01(\t\"\x86\x01\n\x12\x43reateImageRequest\x12\x12\n\nrepository\x18\x01 \x01(\t\x12\x0b\n\x03tag\x18\x02 \x01(\t\x12\x11\n\tdata_file\x18\x03 \x01(\x0c\x12\x12\n\nmodel_file\x18\x04 \x01(\x0c\x12(\n\x0cimage_config\x18\x05 \x01(\x0b\x32\x12.proto.ImageConfig\";\n\x13\x43reateImageResponse\x12\x10\n\x08image_id\x18\x01 \x01(\t\x12\x12\n\nimage_size\x18\x02 \x01(\x03\"5\n\x12\x44\x65leteImageRequest\x12\x12\n\nrepository\x18\x01 \x01(\t\x12\x0b\n\x03tag\x18\x02 \x01(\t\"&\n\x13\x44\x65leteImageResponse\x12\x0f\n\x07success\x18\x01 \x01(\x08\"8\n\x15\x43reateInstanceRequest\x12\x12\n\nimage_name\x18\x01 \x01(\t\x12\x0b\n\x03url\x18\x02 \x01(\t\"D\n\x16\x43reateInstanceResponse\x12\x13\n\x0binstance_id\x18\x01 \x01(\t\x12\x15\n\rinstance_name\x18\x02 \x01(\t\"*\n\x13InstanceInfoRequest\x12\x13\n\x0binstance_id\x18\x01 \x01(\t\"&\n\x14InstanceInfoResponse\x12\x0e\n\x06status\x18\x01 \x01(\t\"@\n\x16OperateInstanceRequest\x12\x13\n\x0binstance_id\x18\x01 \x01(\t\x12\x11\n\toperation\x18\x02 \x01(\t\"*\n\x17OperateInstanceResponse\x12\x0f\n\x07success\x18\x01 \x01(\x08\x32\x94\x03\n\x0fInstanceService\x12\x46\n\x0b\x43reateImage\x12\x19.proto.CreateImageRequest\x1a\x1a.proto.CreateImageResponse\"\x00\x12\x46\n\x0b\x44\x65leteImage\x12\x19.proto.DeleteImageRequest\x1a\x1a.proto.DeleteImageResponse\"\x00\x12O\n\x0e\x43reateInstance\x12\x1c.proto.CreateInstanceRequest\x1a\x1d.proto.CreateInstanceResponse\"\x00\x12L\n\x0fGetInstanceInfo\x12\x1a.proto.InstanceInfoRequest\x1a\x1b.proto.InstanceInfoResponse\"\x00\x12R\n\x0fOperateInstance\x12\x1d.proto.OperateInstanceRequest\x1a\x1e.proto.OperateInstanceResponse\"\x00\x62\x06proto3'
+  serialized_pb=b'\n\x0einstance.proto\x12\x05proto\"\x86\x01\n\x0bImageConfig\x12\x0f\n\x07task_id\x18\x01 \x01(\t\x12\x0c\n\x04type\x18\x02 \x01(\t\x12\r\n\x05model\x18\x03 \x01(\t\x12\x12\n\ndata_label\x18\x04 \x01(\t\x12\x14\n\x0ctarget_label\x18\x05 \x01(\t\x12\x10\n\x08template\x18\x06 \x01(\t\x12\r\n\x05title\x18\x07 \x01(\t\"\x8e\x01\n\x1a\x43reateTrainingImageRequest\x12\x12\n\nrepository\x18\x01 \x01(\t\x12\x0b\n\x03tag\x18\x02 \x01(\t\x12\x11\n\tdata_file\x18\x03 \x01(\x0c\x12\x12\n\nmodel_file\x18\x04 \x01(\x0c\x12(\n\x0cimage_config\x18\x05 \x01(\x0b\x32\x12.proto.ImageConfig\"\x97\x01\n\x1c\x43reateDeploymentImageRequest\x12\x12\n\nrepository\x18\x01 \x01(\t\x12\x0b\n\x03tag\x18\x02 \x01(\t\x12\x10\n\x08template\x18\x03 \x01(\t\x12\x1a\n\x12trained_model_file\x18\x04 \x01(\x0c\x12(\n\x0cimage_config\x18\x05 \x01(\x0b\x32\x12.proto.ImageConfig\";\n\x13\x43reateImageResponse\x12\x10\n\x08image_id\x18\x01 \x01(\t\x12\x12\n\nimage_size\x18\x02 \x01(\x03\"5\n\x12\x44\x65leteImageRequest\x12\x12\n\nrepository\x18\x01 \x01(\t\x12\x0b\n\x03tag\x18\x02 \x01(\t\"&\n\x13\x44\x65leteImageResponse\x12\x0f\n\x07success\x18\x01 \x01(\x08\"8\n\x15\x43reateInstanceRequest\x12\x12\n\nimage_name\x18\x01 \x01(\t\x12\x0b\n\x03url\x18\x02 \x01(\t\"D\n\x16\x43reateInstanceResponse\x12\x13\n\x0binstance_id\x18\x01 \x01(\t\x12\x15\n\rinstance_name\x18\x02 \x01(\t\"*\n\x13InstanceInfoRequest\x12\x13\n\x0binstance_id\x18\x01 \x01(\t\"&\n\x14InstanceInfoResponse\x12\x0e\n\x06status\x18\x01 \x01(\t\"@\n\x16OperateInstanceRequest\x12\x13\n\x0binstance_id\x18\x01 \x01(\t\x12\x11\n\toperation\x18\x02 \x01(\t\"*\n\x17OperateInstanceResponse\x12\x0f\n\x07success\x18\x01 \x01(\x08\x32\x80\x04\n\x0fInstanceService\x12V\n\x13\x43reateTrainingImage\x12!.proto.CreateTrainingImageRequest\x1a\x1a.proto.CreateImageResponse\"\x00\x12Z\n\x15\x43reateDeploymentImage\x12#.proto.CreateDeploymentImageRequest\x1a\x1a.proto.CreateImageResponse\"\x00\x12\x46\n\x0b\x44\x65leteImage\x12\x19.proto.DeleteImageRequest\x1a\x1a.proto.DeleteImageResponse\"\x00\x12O\n\x0e\x43reateInstance\x12\x1c.proto.CreateInstanceRequest\x1a\x1d.proto.CreateInstanceResponse\"\x00\x12L\n\x0fGetInstanceInfo\x12\x1a.proto.InstanceInfoRequest\x1a\x1b.proto.InstanceInfoResponse\"\x00\x12R\n\x0fOperateInstance\x12\x1d.proto.OperateInstanceRequest\x1a\x1e.proto.OperateInstanceResponse\"\x00\x62\x06proto3'
 )
 
 
@@ -99,44 +99,44 @@ _IMAGECONFIG = _descriptor.Descriptor(
 )
 
 
-_CREATEIMAGEREQUEST = _descriptor.Descriptor(
-  name='CreateImageRequest',
-  full_name='proto.CreateImageRequest',
+_CREATETRAININGIMAGEREQUEST = _descriptor.Descriptor(
+  name='CreateTrainingImageRequest',
+  full_name='proto.CreateTrainingImageRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
-      name='repository', full_name='proto.CreateImageRequest.repository', index=0,
+      name='repository', full_name='proto.CreateTrainingImageRequest.repository', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='tag', full_name='proto.CreateImageRequest.tag', index=1,
+      name='tag', full_name='proto.CreateTrainingImageRequest.tag', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='data_file', full_name='proto.CreateImageRequest.data_file', index=2,
+      name='data_file', full_name='proto.CreateTrainingImageRequest.data_file', index=2,
       number=3, type=12, cpp_type=9, label=1,
       has_default_value=False, default_value=b"",
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='model_file', full_name='proto.CreateImageRequest.model_file', index=3,
+      name='model_file', full_name='proto.CreateTrainingImageRequest.model_file', index=3,
       number=4, type=12, cpp_type=9, label=1,
       has_default_value=False, default_value=b"",
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='image_config', full_name='proto.CreateImageRequest.image_config', index=4,
+      name='image_config', full_name='proto.CreateTrainingImageRequest.image_config', index=4,
       number=5, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -155,7 +155,67 @@ _CREATEIMAGEREQUEST = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=163,
-  serialized_end=297,
+  serialized_end=305,
+)
+
+
+_CREATEDEPLOYMENTIMAGEREQUEST = _descriptor.Descriptor(
+  name='CreateDeploymentImageRequest',
+  full_name='proto.CreateDeploymentImageRequest',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='repository', full_name='proto.CreateDeploymentImageRequest.repository', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='tag', full_name='proto.CreateDeploymentImageRequest.tag', index=1,
+      number=2, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='template', full_name='proto.CreateDeploymentImageRequest.template', index=2,
+      number=3, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='trained_model_file', full_name='proto.CreateDeploymentImageRequest.trained_model_file', index=3,
+      number=4, type=12, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"",
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='image_config', full_name='proto.CreateDeploymentImageRequest.image_config', index=4,
+      number=5, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=308,
+  serialized_end=459,
 )
 
 
@@ -193,8 +253,8 @@ _CREATEIMAGERESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=299,
-  serialized_end=358,
+  serialized_start=461,
+  serialized_end=520,
 )
 
 
@@ -232,8 +292,8 @@ _DELETEIMAGEREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=360,
-  serialized_end=413,
+  serialized_start=522,
+  serialized_end=575,
 )
 
 
@@ -264,8 +324,8 @@ _DELETEIMAGERESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=415,
-  serialized_end=453,
+  serialized_start=577,
+  serialized_end=615,
 )
 
 
@@ -303,8 +363,8 @@ _CREATEINSTANCEREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=455,
-  serialized_end=511,
+  serialized_start=617,
+  serialized_end=673,
 )
 
 
@@ -342,8 +402,8 @@ _CREATEINSTANCERESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=513,
-  serialized_end=581,
+  serialized_start=675,
+  serialized_end=743,
 )
 
 
@@ -374,8 +434,8 @@ _INSTANCEINFOREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=583,
-  serialized_end=625,
+  serialized_start=745,
+  serialized_end=787,
 )
 
 
@@ -406,8 +466,8 @@ _INSTANCEINFORESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=627,
-  serialized_end=665,
+  serialized_start=789,
+  serialized_end=827,
 )
 
 
@@ -445,8 +505,8 @@ _OPERATEINSTANCEREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=667,
-  serialized_end=731,
+  serialized_start=829,
+  serialized_end=893,
 )
 
 
@@ -477,13 +537,15 @@ _OPERATEINSTANCERESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=733,
-  serialized_end=775,
+  serialized_start=895,
+  serialized_end=937,
 )
 
-_CREATEIMAGEREQUEST.fields_by_name['image_config'].message_type = _IMAGECONFIG
+_CREATETRAININGIMAGEREQUEST.fields_by_name['image_config'].message_type = _IMAGECONFIG
+_CREATEDEPLOYMENTIMAGEREQUEST.fields_by_name['image_config'].message_type = _IMAGECONFIG
 DESCRIPTOR.message_types_by_name['ImageConfig'] = _IMAGECONFIG
-DESCRIPTOR.message_types_by_name['CreateImageRequest'] = _CREATEIMAGEREQUEST
+DESCRIPTOR.message_types_by_name['CreateTrainingImageRequest'] = _CREATETRAININGIMAGEREQUEST
+DESCRIPTOR.message_types_by_name['CreateDeploymentImageRequest'] = _CREATEDEPLOYMENTIMAGEREQUEST
 DESCRIPTOR.message_types_by_name['CreateImageResponse'] = _CREATEIMAGERESPONSE
 DESCRIPTOR.message_types_by_name['DeleteImageRequest'] = _DELETEIMAGEREQUEST
 DESCRIPTOR.message_types_by_name['DeleteImageResponse'] = _DELETEIMAGERESPONSE
@@ -502,12 +564,19 @@ ImageConfig = _reflection.GeneratedProtocolMessageType('ImageConfig', (_message.
   })
 _sym_db.RegisterMessage(ImageConfig)
 
-CreateImageRequest = _reflection.GeneratedProtocolMessageType('CreateImageRequest', (_message.Message,), {
-  'DESCRIPTOR' : _CREATEIMAGEREQUEST,
+CreateTrainingImageRequest = _reflection.GeneratedProtocolMessageType('CreateTrainingImageRequest', (_message.Message,), {
+  'DESCRIPTOR' : _CREATETRAININGIMAGEREQUEST,
   '__module__' : 'instance_pb2'
-  # @@protoc_insertion_point(class_scope:proto.CreateImageRequest)
+  # @@protoc_insertion_point(class_scope:proto.CreateTrainingImageRequest)
   })
-_sym_db.RegisterMessage(CreateImageRequest)
+_sym_db.RegisterMessage(CreateTrainingImageRequest)
+
+CreateDeploymentImageRequest = _reflection.GeneratedProtocolMessageType('CreateDeploymentImageRequest', (_message.Message,), {
+  'DESCRIPTOR' : _CREATEDEPLOYMENTIMAGEREQUEST,
+  '__module__' : 'instance_pb2'
+  # @@protoc_insertion_point(class_scope:proto.CreateDeploymentImageRequest)
+  })
+_sym_db.RegisterMessage(CreateDeploymentImageRequest)
 
 CreateImageResponse = _reflection.GeneratedProtocolMessageType('CreateImageResponse', (_message.Message,), {
   'DESCRIPTOR' : _CREATEIMAGERESPONSE,
@@ -581,15 +650,25 @@ _INSTANCESERVICE = _descriptor.ServiceDescriptor(
   index=0,
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_start=778,
-  serialized_end=1182,
+  serialized_start=940,
+  serialized_end=1452,
   methods=[
   _descriptor.MethodDescriptor(
-    name='CreateImage',
-    full_name='proto.InstanceService.CreateImage',
+    name='CreateTrainingImage',
+    full_name='proto.InstanceService.CreateTrainingImage',
     index=0,
     containing_service=None,
-    input_type=_CREATEIMAGEREQUEST,
+    input_type=_CREATETRAININGIMAGEREQUEST,
+    output_type=_CREATEIMAGERESPONSE,
+    serialized_options=None,
+    create_key=_descriptor._internal_create_key,
+  ),
+  _descriptor.MethodDescriptor(
+    name='CreateDeploymentImage',
+    full_name='proto.InstanceService.CreateDeploymentImage',
+    index=1,
+    containing_service=None,
+    input_type=_CREATEDEPLOYMENTIMAGEREQUEST,
     output_type=_CREATEIMAGERESPONSE,
     serialized_options=None,
     create_key=_descriptor._internal_create_key,
@@ -597,7 +676,7 @@ _INSTANCESERVICE = _descriptor.ServiceDescriptor(
   _descriptor.MethodDescriptor(
     name='DeleteImage',
     full_name='proto.InstanceService.DeleteImage',
-    index=1,
+    index=2,
     containing_service=None,
     input_type=_DELETEIMAGEREQUEST,
     output_type=_DELETEIMAGERESPONSE,
@@ -607,7 +686,7 @@ _INSTANCESERVICE = _descriptor.ServiceDescriptor(
   _descriptor.MethodDescriptor(
     name='CreateInstance',
     full_name='proto.InstanceService.CreateInstance',
-    index=2,
+    index=3,
     containing_service=None,
     input_type=_CREATEINSTANCEREQUEST,
     output_type=_CREATEINSTANCERESPONSE,
@@ -617,7 +696,7 @@ _INSTANCESERVICE = _descriptor.ServiceDescriptor(
   _descriptor.MethodDescriptor(
     name='GetInstanceInfo',
     full_name='proto.InstanceService.GetInstanceInfo',
-    index=3,
+    index=4,
     containing_service=None,
     input_type=_INSTANCEINFOREQUEST,
     output_type=_INSTANCEINFORESPONSE,
@@ -627,7 +706,7 @@ _INSTANCESERVICE = _descriptor.ServiceDescriptor(
   _descriptor.MethodDescriptor(
     name='OperateInstance',
     full_name='proto.InstanceService.OperateInstance',
-    index=4,
+    index=5,
     containing_service=None,
     input_type=_OPERATEINSTANCEREQUEST,
     output_type=_OPERATEINSTANCERESPONSE,

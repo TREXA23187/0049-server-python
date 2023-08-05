@@ -16,9 +16,14 @@ class InstanceServiceStub(object):
         Args:
             channel: A grpc.Channel.
         """
-        self.CreateImage = channel.unary_unary(
-                '/proto.InstanceService/CreateImage',
-                request_serializer=instance__pb2.CreateImageRequest.SerializeToString,
+        self.CreateTrainingImage = channel.unary_unary(
+                '/proto.InstanceService/CreateTrainingImage',
+                request_serializer=instance__pb2.CreateTrainingImageRequest.SerializeToString,
+                response_deserializer=instance__pb2.CreateImageResponse.FromString,
+                )
+        self.CreateDeploymentImage = channel.unary_unary(
+                '/proto.InstanceService/CreateDeploymentImage',
+                request_serializer=instance__pb2.CreateDeploymentImageRequest.SerializeToString,
                 response_deserializer=instance__pb2.CreateImageResponse.FromString,
                 )
         self.DeleteImage = channel.unary_unary(
@@ -48,7 +53,13 @@ class InstanceServiceServicer(object):
 
     """
 
-    def CreateImage(self, request, context):
+    def CreateTrainingImage(self, request, context):
+        """Missing associated documentation comment in .proto file."""
+        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+        context.set_details('Method not implemented!')
+        raise NotImplementedError('Method not implemented!')
+
+    def CreateDeploymentImage(self, request, context):
         """Missing associated documentation comment in .proto file."""
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
@@ -81,9 +92,14 @@ class InstanceServiceServicer(object):
 
 def add_InstanceServiceServicer_to_server(servicer, server):
     rpc_method_handlers = {
-            'CreateImage': grpc.unary_unary_rpc_method_handler(
-                    servicer.CreateImage,
-                    request_deserializer=instance__pb2.CreateImageRequest.FromString,
+            'CreateTrainingImage': grpc.unary_unary_rpc_method_handler(
+                    servicer.CreateTrainingImage,
+                    request_deserializer=instance__pb2.CreateTrainingImageRequest.FromString,
+                    response_serializer=instance__pb2.CreateImageResponse.SerializeToString,
+            ),
+            'CreateDeploymentImage': grpc.unary_unary_rpc_method_handler(
+                    servicer.CreateDeploymentImage,
+                    request_deserializer=instance__pb2.CreateDeploymentImageRequest.FromString,
                     response_serializer=instance__pb2.CreateImageResponse.SerializeToString,
             ),
             'DeleteImage': grpc.unary_unary_rpc_method_handler(
@@ -119,7 +135,7 @@ class InstanceService(object):
     """
 
     @staticmethod
-    def CreateImage(request,
+    def CreateTrainingImage(request,
             target,
             options=(),
             channel_credentials=None,
@@ -129,8 +145,25 @@ class InstanceService(object):
             wait_for_ready=None,
             timeout=None,
             metadata=None):
-        return grpc.experimental.unary_unary(request, target, '/proto.InstanceService/CreateImage',
-            instance__pb2.CreateImageRequest.SerializeToString,
+        return grpc.experimental.unary_unary(request, target, '/proto.InstanceService/CreateTrainingImage',
+            instance__pb2.CreateTrainingImageRequest.SerializeToString,
+            instance__pb2.CreateImageResponse.FromString,
+            options, channel_credentials,
+            insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
+
+    @staticmethod
+    def CreateDeploymentImage(request,
+            target,
+            options=(),
+            channel_credentials=None,
+            call_credentials=None,
+            insecure=False,
+            compression=None,
+            wait_for_ready=None,
+            timeout=None,
+            metadata=None):
+        return grpc.experimental.unary_unary(request, target, '/proto.InstanceService/CreateDeploymentImage',
+            instance__pb2.CreateDeploymentImageRequest.SerializeToString,
             instance__pb2.CreateImageResponse.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
