@@ -63,7 +63,7 @@ class InstanceService(proto.instance_pb2_grpc.InstanceServiceServicer):
 
             if request.label_int_tag:
                 with open(os.path.join(image_to_build_path, "model/label_int_tag.json"), 'w') as label_int_tag_file:
-                    json.dump(request.trained_model_file, label_int_tag_file)
+                    json.dump(json.loads(request.label_int_tag), label_int_tag_file)
 
             if request.image_config:
                 with open(os.path.join(image_to_build_path, "config.json"), 'w') as config_file:
