@@ -21,6 +21,7 @@ message ImageConfig {
   string target_label = 5;
   string template = 6;
   string title = 7;
+  string hyper_parameters = 8;
 }
 
 message CreateTrainingImageRequest {
@@ -35,7 +36,8 @@ message CreateDeploymentImageRequest {
   string tag = 2;
   string template = 3;
   bytes trained_model_file = 4;
-  ImageConfig image_config = 5;
+  string label_int_tag = 5;
+  ImageConfig image_config = 6;
 }
 message CreateImageResponse{
   string image_id = 1;

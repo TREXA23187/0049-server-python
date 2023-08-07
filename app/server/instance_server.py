@@ -35,6 +35,7 @@ class InstanceService(proto.instance_pb2_grpc.InstanceServiceServicer):
                 with open(os.path.join(image_to_build_path, "config.json"), 'w') as config_file:
                     config = MessageToDict(request.image_config)
                     config["dataLabel"] = json.loads(config["dataLabel"])
+                    config["hyperParameters"] = json.loads(config["hyperParameters"])
 
                     json.dump(config, config_file)
 
@@ -59,6 +60,10 @@ class InstanceService(proto.instance_pb2_grpc.InstanceServiceServicer):
             if request.trained_model_file:
                 with open(os.path.join(image_to_build_path, "model/model.pickle"), 'wb') as model_file:
                     model_file.write(request.trained_model_file)
+
+            if request.label_int_tag:
+                with open(os.path.join(image_to_build_path, "model/label_int_tag.json"), 'w') as label_int_tag_file:
+                    json.dump(request.trained_model_file, label_int_tag_file)
 
             if request.image_config:
                 with open(os.path.join(image_to_build_path, "config.json"), 'w') as config_file:
