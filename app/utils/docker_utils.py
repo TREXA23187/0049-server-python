@@ -15,16 +15,16 @@ def build_image(dockerfile_path, tag):
     return image
 
 
-def delete_image(image_name, tag):
+def delete_image(image_id):
     try:
         client = docker.from_env()
 
-        client.images.remove(f"{image_name}:{tag}")
+        client.images.remove(image_id)
 
-        return True
+        return True, ""
     except Exception as e:
         print("delete_image error: ", e)
-        return False
+        return False, str(e)
 
 
 def run_container(image_name, url):

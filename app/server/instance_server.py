@@ -82,8 +82,8 @@ class InstanceService(proto.instance_pb2_grpc.InstanceServiceServicer):
                 shutil.rmtree("image_to_build")
 
     def DeleteImage(self, request, context):
-        success = docker_utils.delete_image(request.repository, request.tag)
-        return proto.instance_pb2.DeleteImageResponse(success=success)
+        success, msg = docker_utils.delete_image(request.image_id)
+        return proto.instance_pb2.DeleteImageResponse(success=success, msg=msg)
 
     def GetInstanceInfo(self, request, context):
         status = docker_utils.get_container_status(request.instance_id)

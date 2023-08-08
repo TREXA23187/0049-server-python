@@ -45,11 +45,11 @@ message CreateImageResponse{
 }
 
 message DeleteImageRequest {
-  string repository = 1;
-  string tag = 2;
+  string image_id = 1;
 }
 message DeleteImageResponse{
   bool success = 1;
+  string msg = 2;
 }
 
 message CreateInstanceRequest {
