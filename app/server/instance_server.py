@@ -87,8 +87,11 @@ class InstanceService(proto.instance_pb2_grpc.InstanceServiceServicer):
 
     def GetInstanceInfo(self, request, context):
         status = docker_utils.get_container_status(request.instance_id)
+        logs = b''
+        if request.need_logs:
+            logs = docker_utils.get_container_logs(request.instance_id)
 
-        return proto.instance_pb2.InstanceInfoResponse(status=status)
+        return proto.instance_pb2.InstanceInfoResponse(status=status, logs=logs)
 
     def OperateInstance(self, request, context):
         success = None

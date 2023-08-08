@@ -63,9 +63,11 @@ message CreateInstanceResponse{
 
 message InstanceInfoRequest{
   string instance_id = 1;
+  bool need_logs = 2;
 }
 message InstanceInfoResponse{
   string status = 1;
+  bytes logs = 2;
 }
 
 message OperateInstanceRequest{

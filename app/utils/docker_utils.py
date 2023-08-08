@@ -83,6 +83,17 @@ def get_container_status(container_name_or_id):
         return 'not exist'
 
 
+def get_container_logs(container_name_or_id):
+    client = docker.from_env()
+
+    container = client.containers.get(container_name_or_id)
+
+    logs = container.logs()
+
+    print(logs.decode('utf-8'))
+    return logs
+
+
 if __name__ == '__main__':
     # create_image_and_run_container('/Users/chenxingyang/PycharmProjects/flask_demo', 'flask-demo',
     build_image('/Users/chenxingyang/PycharmProjects/flask_demo', 'flask-demo:latest')
